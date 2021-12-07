@@ -10,21 +10,21 @@ $(function(){
     function resizeScreen(){
          viewportHeight = $(window).height();
          viewportWidth =  $(window).width();
-         $(".accueil").css('width',viewportWidth+"px");
-         $('.accueil').css('height',viewportHeight+"px");
+         $(".accueil").css('width',viewportWidth+"px")
+                      .css('height',viewportHeight+"px");
     }
 
     //Mise en place de l'application
     function initDevicesFrame1(){
       if(viewportWidth<viewportHeight){
-         $('.tablette').css('width',(viewportWidth-viewportWidth*0.4)+"px");
-         $('.tablette').css('height',(viewportHeight-viewportHeight*0.45)+"px");
-         $('.tablette').css('margin',(viewportHeight-(viewportHeight-viewportHeight*0.25))/2+"px " +(viewportWidth-(viewportWidth-viewportWidth*0.4))/2+"px" );
+         $('.tablette').css('width',(viewportWidth-viewportWidth*0.4)+"px")
+                       .css('height',(viewportHeight-viewportHeight*0.45)+"px")
+                       .css('margin',(viewportHeight-(viewportHeight-viewportHeight*0.25))/2+"px " +(viewportWidth-(viewportWidth-viewportWidth*0.4))/2+"px" );
       
       }else{
-        $('.tablette').css('width',(viewportWidth-viewportWidth*0.55)+"px");
-        $('.tablette').css('height',(viewportHeight-viewportHeight*0.6)+"px");
-        $('.tablette').css('margin',(viewportHeight-(viewportHeight-viewportHeight*0.45))/2+"px " +(viewportWidth-(viewportWidth-viewportWidth*0.55))/2+"px" );
+        $('.tablette').css('width',(viewportWidth-viewportWidth*0.55)+"px")
+                      .css('height',(viewportHeight-viewportHeight*0.6)+"px")
+                      .css('margin',(viewportHeight-(viewportHeight-viewportHeight*0.35))/2+"px " +(viewportWidth-(viewportWidth-viewportWidth*0.55))/2+"px" );
       }
 
      
