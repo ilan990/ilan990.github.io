@@ -52,6 +52,7 @@ html {
     display:flex;
     justify-content: center;
     font-size: 10vh;
+    background-image: -webkit-linear-gradient(#fc5c7d, #6a82fb);
     background-color: black;
     background: linear-gradient( #fc5c7d, #6a82fb);
     -webkit-background-clip: text;
