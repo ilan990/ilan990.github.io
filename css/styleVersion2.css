@@ -1,7 +1,7 @@
 @font-face {font-family: nordic;src: url(../fonts/vevey.ttf);}
 body{
   margin: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(202, 202, 202);
   color: #fff;
   font-family: Helvetica, sans-serif;
   
@@ -48,28 +48,11 @@ html {
     } 
 
 .title{
-    margin-top: 100px;
+    margin-top: 5vh;
     display:flex;
     justify-content: center;
     font-size: 10vh;
-    background-color: -webkit-linear-gradient(#fc5c7d, #6a82fb);
-    background-color: -moz-linear-gradient(#fc5c7d, #6a82fb);
-    background-color: -o-linear-gradient(#fc5c7d, #6a82fb);
-    background-color: -ms-linear-gradient(#fc5c7d, #6a82fb);
-    background-color: black;
-    background: linear-gradient( #fc5c7d, #6a82fb);
-    -webkit-background-clip: text;
-    -o-background-clip: text;
-    -ms-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -o-text-fill-color: transparent;
-    -ms-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-
-    
-
+    color: rgb(49, 49, 49);
 }
 
 .tablette img{
