@@ -51,7 +51,7 @@ html {
     margin-top: 5vh auto;
     display:flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     font-size: 10vh;
     color: rgb(17, 89, 148);
 }
