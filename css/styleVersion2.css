@@ -52,13 +52,14 @@ html {
     display:flex;
     justify-content: center;
     font-size: 10vh;
-    background-image: -webkit-linear-gradient(#fc5c7d, #6a82fb);
+    background-color: -webkit-linear-gradient(#fc5c7d, #6a82fb);
     background-color: black;
     background: linear-gradient( #fc5c7d, #6a82fb);
     -webkit-background-clip: text;
     -o-background-clip: text;
     -ms-background-clip: text;
     -moz-background-clip: text;
+    -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -o-text-fill-color: transparent;
