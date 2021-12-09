@@ -46,6 +46,7 @@ html {
     bottom:50vh;
   
     } 
+
 .title{
     margin-top: 100px;
     display:flex;
@@ -61,8 +62,10 @@ html {
     -o-text-fill-color: transparent;
     -ms-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    background: -webkit-gradient(to right, color-stop(50%,#fc5c7d), color-stop(50%,#6a82fb)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(to right,  #fc5c7d 50%,#6a82fb 50%); /* Chrome10+,Safari5.1+ */
     
-      
+
 }
 
 .tablette img{
