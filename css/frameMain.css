@@ -1,26 +1,5 @@
 @font-face {font-family: nordic;src: url(../fonts/vevey.ttf);}
-body{
-  margin: 0;
-  background-color: rgb(202, 202, 202);
-  color: #fff;
-  font-family: Helvetica, sans-serif;
-  
-}
-h1{  
-    position: absolute;
-    font-family: nordic;
-    
-}
-html {
-    overflow: scroll;
-    overflow-x: hidden;
-}
-::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-}
-
-  .tablette{
+.tablette{
       display: flex;
       margin: auto;
       max-width: 50%;
@@ -35,9 +14,8 @@ html {
   }
 
   .accueil{
-      position: absolute;
+      display:absolute;
   }
-
  .backgroundScroll {
     position: relative;
     background-color: rgb(218, 56, 56);
@@ -48,8 +26,8 @@ html {
     } 
 
 .title{
-    margin-top: 5vh auto;
     display:flex;
+    margin-top: 5vh auto;
     justify-content: center;
     text-align: center;
     font-size: 10vh;

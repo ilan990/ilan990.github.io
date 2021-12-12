@@ -1,0 +1,22 @@
+@font-face {font-family: nordic;src: url(../fonts/vevey.ttf);}
+body{
+  margin: 0;
+  background-color: rgb(202, 202, 202);
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  
+}
+h1{  
+    position: absolute;
+    font-family: nordic;
+    
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+

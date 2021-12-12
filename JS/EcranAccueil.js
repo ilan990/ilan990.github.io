@@ -11,7 +11,7 @@ $(function(){
          viewportHeight = $(window).height();
          viewportWidth =  $(window).width();
          $(".accueil").css('width',viewportWidth+"px")
-                      .css('height',viewportHeight+"px");
+                      .css('height',(viewportHeight-(viewportHeight*10)/100)+"px");
                       
     }
 
@@ -20,15 +20,11 @@ $(function(){
       if(viewportWidth<viewportHeight){
          $('.tablette').css('width',"2436px")
                        .css('height',"1125px")
-        //                .css('margin',(viewportHeight-(viewportHeight-viewportHeight*0.25))/2+"px " +(viewportWidth-(viewportWidth-viewportWidth*0.4))/2+"px" );
-       
+        
       }else{
-         $('.tablette').css('width',"983px")
-                       .css('height',"737px")
-        //.css('width',(viewportWidth-viewportWidth*0.55)+"px")
-        //               .css('height',(viewportHeight-viewportHeight*0.6)+"px")
-        //               .css('margin',(viewportHeight-(viewportHeight-viewportHeight*0.35))/2+"px " +(viewportWidth-(viewportWidth-viewportWidth*0.55))/2+"px" );
-      
+         $('.tablette').css('width',"820px")
+                       .css('height',"980px")
+       
         }
 
      
