@@ -7,22 +7,13 @@
     opacity:0; 
     z-index:1;
     } 
-    .heure{
-        display:flex;
-        position:relative;
-        margin-top: 5vh auto;
-        justify-content: center;
-        text-align: center;
-        font-size: 9vh;
-        z-index:2;
-        width:100%;
-    }
-.title1{
+    
+.heure{
     display:flex;
     margin-top: 5vh auto;
     width: 100%;
     padding:10vh 10vh 0 10vh;
     justify-content: center;
     text-align: center;
-    font-size: 5vh;
+    font-size: 15vw;
     z-index:2;}
