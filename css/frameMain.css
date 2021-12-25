@@ -17,6 +17,7 @@
   .accueil{
       display:none;
   }
+  .play{cursor:pointer}
  .backgroundScroll {
     position: relative;
     background-color: rgb(218, 56, 56);

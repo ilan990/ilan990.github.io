@@ -26,9 +26,9 @@ for (let i=0;i<4;i++){
 
 //Numéros pour le mot de passe
 for (let i=1;i<10;i++){
-  $(".numbers").append("<div class='number number"+i+"'>"+i+"</div>")
+  $(".numbers").append("<div class='number number"+i+"'><p>"+i+"</p></div>")
 }
   $(".numbers").append("<div></div>")
-  $(".numbers").append("<div class='number number0'>0</div>")
+  $(".numbers").append("<div class='number number0'><p>0</p></div>")
 
 })
