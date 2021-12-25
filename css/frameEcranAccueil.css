@@ -1,4 +1,10 @@
-.frameAccueil{display:none}
+.frameAccueil{
+    display:none;
+    width:100vw;
+    height:100vh;
+    flex-direction: column;
+    justify-content: space-around ;
+}
 .backgroundAccueil {
     display:flex;
     position: absolute;
@@ -12,8 +18,45 @@
     display:flex;
     margin-top: 5vh auto;
     width: 100%;
-    padding:10vh 10vh 0 10vh;
     justify-content: center;
     text-align: center;
     font-size: 15vw;
     z-index:2;}
+.numbers{
+    display: grid;
+    width:50vw;
+    grid-template-columns: repeat(3,33%);
+    padding:0 25vw;
+    justify-content: center;
+    
+}
+.mdp{
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+.points{
+    display:flex;
+    justify-content: center;
+    
+}
+.point{
+    display: flex;
+    justify-content: center;
+    height:2vw;
+    width:2vw;
+    border: solid;
+    border-radius: 50%;
+    z-index:2;
+    margin:0 1vw 5vw 0;
+    
+    
+}
+.number{
+    width:auto;
+    display:flex;
+    justify-content: center;
+    z-index:2;
+    font-size: 50px;
+    
+}
