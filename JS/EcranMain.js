@@ -44,13 +44,14 @@ $(function(){
       $(".play").css('display','none');
       $(".tablette").addClass('animate');
       $(".tablette").css("border","0px");
-      setTimeout(function(){
-        framevisible(1);
-        $(".backgroundAccueil").css("opacity","1");
-      }, 2000);
       
     })
-
+    setInterval(function(){
+      if($(".tablette").offset().top < 0 && $(".tablette").offset().left){
+        framevisible(1);
+        $(".backgroundAccueil").css("opacity","1");
+      };
+      },100)
     resizeScreen();
     initDevicesFrame1();
 })
