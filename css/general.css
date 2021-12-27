@@ -4,7 +4,7 @@ body{
   background-color: rgb(202, 202, 202);
   color: #fff;
   font-family: Helvetica, sans-serif;
-  overflow:hidden;
+  overflow:none;
   
 }
 h1{  
@@ -14,8 +14,8 @@ h1{
 }
 html {
     overflow: scroll;
-    overflow-x: hidden;
-    overflow-y:hidden;
+    overflow-x: none;
+    overflow-y:none;
 }
 ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
