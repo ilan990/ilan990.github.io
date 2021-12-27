@@ -22,8 +22,8 @@ $(function(){
          viewportWidth =  $(window).width();
          $(".frameMain").css('width',viewportWidth+"px")
                       .css('height',(viewportHeight-(viewportHeight*10)/100)+"px");
-        $('.backgroundAccueil').css("width",(viewportWidth+200)+"px");
-        $('.backgroundAccueil').css("height",(viewportHeight+200)+"px");
+        $('.backgroundAccueil').css("width",viewportWidth+"px");
+        $('.backgroundAccueil').css("height",viewportHeight+"px");
         
                       
     }
