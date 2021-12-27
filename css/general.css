@@ -15,6 +15,7 @@ h1{
 html {
     overflow: scroll;
     overflow-x: hidden;
+    overflow-y:hidden;
 }
 ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
