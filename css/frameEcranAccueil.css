@@ -6,6 +6,9 @@
     justify-content: space-around ;
     overflow: hidden;
 }
+.frameAccueil img{
+    transform: scale(3.5);
+}
 .backgroundAccueil {
     display:flex;
     position: absolute;
