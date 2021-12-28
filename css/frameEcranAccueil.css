@@ -6,9 +6,7 @@
     justify-content: space-around ;
     overflow: hidden;
 }
-.frameAccueil img{
-    transform: scale(3.5);
-}
+
 .backgroundAccueil {
     display:flex;
     position: absolute;
@@ -16,6 +14,8 @@
     top:0;
     opacity:0; 
     z-index:1;
+    width:100vw;
+    height:100vh;
     } 
     
 .heure{
