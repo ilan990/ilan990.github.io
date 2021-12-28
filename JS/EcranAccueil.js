@@ -30,5 +30,44 @@ for (let i=1;i<10;i++){
 }
   $(".numbers").append("<div></div>")
   $(".numbers").append("<div class='number number0'><p>0</p></div>")
+  
+//Fonction s'occupant du mot de passe
+let pointsModifier=0;
+let valeurPoints=0
+    $(".numbers").children().click(function(){
+      if(this.textContent != ""){
+          $(".point"+pointsModifier).css("background-color","white");
+          valeurPoints+=this.textContent;
+          pointsModifier+=1;
+          if(pointsModifier==4){
+            if(valeurPoints == 0){
+                for (let i=0;i<5;i++){
+                  $(".point"+i).css("background-color","green");}
+              }else{
+                    pointsModifier=0;
+                    valeurPoints=0;
+                    $( ".points" ).animate({
+                      marginLeft: "2.5vw",
+                    }, 100 )
+                    $( ".points" ).animate({
+                      marginLeft: "-2.5vw",
+                    }, 100 )
+                    $( ".points" ).animate({
+                      marginLeft: "0vw",
+                    }, 100 )
+                    setTimeout(backgroundTransparent,300)
+                   function backgroundTransparent(){
+                    for(let i=0;i<4;i++){
+                      $(".point"+i).css("background-color","transparent")
+                    }
+                }
+                
+          }               
+              
+            }  
+               
+      }else{
+      console.log(this.textContent)}
+    })
 
 })
