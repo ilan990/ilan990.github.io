@@ -4,6 +4,7 @@
     height:100vh;
     flex-direction: column;
     justify-content: space-around ;
+    overflow: hidden;
 }
 .backgroundAccueil {
     display:flex;
