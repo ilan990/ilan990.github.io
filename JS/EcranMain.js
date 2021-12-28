@@ -21,7 +21,7 @@ $(function(){
          viewportHeight = $(window).height();
          viewportWidth =  $(window).width();
          $(".frameMain").css('width',viewportWidth+"px")
-                        .css('height',(viewportHeight-(viewportHeight*10)/100)+"px");
+                        .css('height',(viewportHeight+"px");
                       
     }
     //Mise en place de l'application
