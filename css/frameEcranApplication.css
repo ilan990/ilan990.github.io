@@ -1,0 +1,18 @@
+.frameEcranApplication{
+    display:none;
+    width:100vw;
+    height:100vh;
+    flex-direction: column;
+    justify-content: space-around ;
+    overflow: hidden;
+}
+.backgroundApplication {
+    display:flex;
+    position: absolute;
+    background-color: rgb(218, 56, 56);
+    top:0;
+    opacity:0; 
+    z-index:1;
+    width:100vw;
+    height:105vh;
+    } 

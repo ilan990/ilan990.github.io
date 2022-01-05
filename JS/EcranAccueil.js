@@ -1,8 +1,18 @@
 
 $(function(){
-
+//frm visible
+let frames=["frameMain","frameAccueil","frameEcranApplication"];
+    
+function framevisible(nbr){
+  for(let i=0;i<frames.length;i++){
+    if (i!=nbr){
+      $("."+frames[i]).css("display","none");
+    }else{
+      $("."+frames[i]).css("display","flex");
+    }
+  }
+}
 //Affichage de l'heure
-let hours;
 setInterval(function() {
   var d = new Date();
   var hours=d.getHours();
@@ -43,8 +53,10 @@ let valeurPoints=0
           if(pointsModifier==4){
             if(valeurPoints == 0){
                 for (let i=0;i<5;i++){
-                  $(".point"+i).css("background-color","green");}
+                  $(".point"+i).css("background-color","green");
+                }
                   framevisible(2);
+                  $(".backgroundApplication").css("opacity","1");
               }else{
                     pointsModifier=0;
                     valeurPoints=0;
