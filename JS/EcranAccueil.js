@@ -1,3 +1,4 @@
+
 $(function(){
 
 //Affichage de l'heure
@@ -31,7 +32,7 @@ for (let i=1;i<10;i++){
   $(".numbers").append("<div></div>")
   $(".numbers").append("<div class='number number0'><p>0</p></div>")
   
-//Fonction s'occupant du mot de passe
+//Fonction click s'occupant du mot de passe
 let pointsModifier=0;
 let valeurPoints=0
     $(".numbers").children().click(function(){
@@ -43,6 +44,7 @@ let valeurPoints=0
             if(valeurPoints == 0){
                 for (let i=0;i<5;i++){
                   $(".point"+i).css("background-color","green");}
+                  framevisible(2);
               }else{
                     pointsModifier=0;
                     valeurPoints=0;
@@ -55,19 +57,14 @@ let valeurPoints=0
                     $( ".points" ).animate({
                       marginLeft: "0vw",
                     }, 100 )
-                    setTimeout(backgroundTransparent,300)
+                    setTimeout(backgroundTransparent,100)
                    function backgroundTransparent(){
-                    for(let i=0;i<4;i++){
-                      $(".point"+i).css("background-color","transparent")
-                    }
-                }
-                
-          }               
-              
-            }  
-               
-      }else{
-      console.log(this.textContent)}
+                      for(let i=0;i<4;i++){
+                        $(".point"+i).css("background-color","transparent")
+                      }
+                    }                
+                }                 
+            }        
+      }
     })
-
 })

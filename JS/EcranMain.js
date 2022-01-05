@@ -1,13 +1,14 @@
+
 $(function(){
     let viewportHeight,viewportWidth;
-    let frames=["frameMain","frameAccueil"]
+    let frames=["frameMain","frameAccueil","frameEcranApplication"]
     $(window).resize(function() {
         resizeScreen();
         initDevicesFrame1();
        
       });
     
-    function framevisible(nbr){
+       function framevisible(nbr){
         for(let i=0;i<frames.length;i++){
           if (i!=nbr){
             $("."+frames[i]).css("display","none");
