@@ -3,8 +3,9 @@
     width:100vw;
     height:100vh;
     flex-direction: column;
-    justify-content: space-around ;
+    justify-content: space-between;
     overflow: hidden;
+    align-items: center;
 }
 .backgroundApplication {
     display:flex;
@@ -12,7 +13,79 @@
     background-color: rgb(218, 56, 56);
     top:0;
     opacity:0; 
-    z-index:1;
     width:100vw;
     height:105vh;
+
+    z-index:1;
     } 
+.notifications{
+        display: flex;
+        justify-content:flex-end;
+        padding-right: 5vh;
+        align-items: center;
+        height:5vh;
+        width:100vw;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 2vh;
+        z-index: 1;
+        
+    }
+
+.applicationsTop{
+    display: grid;
+    justify-items: center;
+    height:73vh;
+    width:90vw;
+    grid-template-columns: repeat(auto-fill,25%);
+    z-index: 1;
+}
+.applicationsBottom{
+    height:10vh;
+    width: 90vw;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 5vh;
+    border-radius: 0.7em;   
+    z-index:1;
+}
+.application{
+    width: 20vw;
+    height:20vw;
+    margin: 1vh 2vw ;
+    background-color: rgba(0, 0, 0, 0.746);
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px){
+    .applicationsBottom{
+        width: 50vw;
+    }
+    .applicationsTop{
+        grid-template-columns: repeat(auto-fill,20%);
+    }
+    .application{
+        width:7vw;
+        height:7vw;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 728px) and (max-width:1023px){
+    .applicationsBottom{
+        width: 70vw; 
+    }
+    .application{
+        width:12vw;
+        height:12vw;
+    }
+    .applicationsTop{
+        grid-template-columns: repeat(auto-fill,20%);
+    }
+}
+
+@media screen and (min-width: 552px) and (max-width:727px){
+    .application{
+        width: 15vw;
+        height:15vw;
+    }
+}
+

@@ -17,7 +17,7 @@ $(function(){
           }
         }
       }
-    //Redimensionne la taille de l'écran
+    //Redimension taille de l'écran
     function resizeScreen(){
          viewportHeight = $(window).height();
          viewportWidth =  $(window).width();

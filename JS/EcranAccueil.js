@@ -39,8 +39,8 @@ for (let i=0;i<4;i++){
 for (let i=1;i<10;i++){
   $(".numbers").append("<div class='number number"+i+"'><p>"+i+"</p></div>")
 }
-  $(".numbers").append("<div></div>")
-  $(".numbers").append("<div class='number number0'><p>0</p></div>")
+$(".numbers").append("<div></div>")
+$(".numbers").append("<div class='number number0'><p>0</p></div>")
   
 //Fonction click s'occupant du mot de passe
 let pointsModifier=0;
@@ -69,7 +69,7 @@ let valeurPoints=0
                     $( ".points" ).animate({
                       marginLeft: "0vw",
                     }, 100 )
-                    setTimeout(backgroundTransparent,100)
+                   setTimeout(backgroundTransparent,100)
                    function backgroundTransparent(){
                       for(let i=0;i<4;i++){
                         $(".point"+i).css("background-color","transparent")
