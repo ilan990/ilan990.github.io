@@ -40,6 +40,8 @@
     z-index: 1;
 }
 .applicationsBottom{
+    display:flex;
+    justify-content: center;
     height:10vh;
     width: 90vw;
     background-color: rgba(255, 255, 255, 0.2);
@@ -48,12 +50,44 @@
     z-index:1;
 }
 .application{
+    display:flex;
+    flex-direction: column;
     width: 20vw;
-    height:20vw;
+    height:22vw;
     margin: 1vh 2vw ;
-    background-color: rgba(0, 0, 0, 0.746);
+    
+}
+.application1,.application2,.application3,.application4,.application5,.application6,.application7,.application8,.application9,.application10,.application11,.application12,.application13,.application14,.application15,.application16,.application17,.application18{
+    background-color: rgba(0, 0, 0, 0.712);
+    border-radius: 0.7em;
+    height:83vh;
+    margin: 1vh;
 }
 
+.applicationTitle1,.applicationTitle2,.applicationTitle3,.applicationTitle4,.applicationTitle5,.applicationTitle6,.applicationTitle7,.applicationTitle8,.applicationTitle9,.applicationTitle10,.applicationTitle11,.applicationTitle12,.applicationTitle13,.applicationTitle14,.applicationTitle15,.applicationTitle16,.applicationTitle17,.applicationTitle18{
+    background-color: rgb(165, 129, 123);
+    height:15vh;
+    margin: 0 1vh;
+}
+.applicationBottom{
+    display:flex;
+    flex-direction: column;
+    width: 9vh;
+    height:9vh;
+    margin: 0 2vw ;
+    
+}
+.applicationB1,.applicationB2,.applicationB3,.applicationB4{
+    background-color: rgba(0, 0, 0, 0.712);
+    border-radius: 0.7em;
+    height:83vh;
+    margin: 1vh;
+}
+.applicationBTitle1,.applicationBTitle2,.applicationBTitle3,.applicationBTitle4{
+    background-color: rgb(165, 129, 123);
+    height:10vh;
+    margin: 0 1vh;
+}
 /* Desktop */
 @media screen and (min-width: 1024px){
     .applicationsBottom{
@@ -64,7 +98,7 @@
     }
     .application{
         width:7vw;
-        height:7vw;
+        height:8vw;
     }
 }
 
@@ -75,17 +109,17 @@
     }
     .application{
         width:12vw;
-        height:12vw;
+        height:13vw;
     }
     .applicationsTop{
         grid-template-columns: repeat(auto-fill,20%);
     }
 }
 
-@media screen and (min-width: 552px) and (max-width:727px){
+@media screen and (min-width: 525px) and (max-width:727px){
     .application{
         width: 15vw;
-        height:15vw;
+        height:16vw;
     }
 }
 

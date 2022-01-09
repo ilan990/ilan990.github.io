@@ -17,7 +17,10 @@ setInterval(function() {
 
 //Affichage des applications
 for (let i=1;i<19;i++){
-  $(".applicationsTop").append("<div class='application application"+i+"'></div>")
+  $(".applicationsTop").append("<div class='application'><div class='application"+i+"'></div><div class='applicationTitle"+i+"'></div></div>")
+}
+for (let i=1;i<5;i++){
+  $(".applicationsBottom").append("<div class='applicationBottom'><div class='applicationB"+i+"'></div><div class='applicationBTitle"+i+"'></div></div>")
 }
 
 })
