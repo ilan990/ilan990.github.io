@@ -37,6 +37,7 @@
     height:73vh;
     width:90vw;
     grid-template-columns: repeat(auto-fill,25%);
+    overflow: scroll;
     z-index: 1;
 }
 .applicationsBottom{
@@ -48,6 +49,7 @@
     margin-bottom: 5vh;
     border-radius: 0.7em;   
     z-index:1;
+    align-items: center;
 }
 .application{
     display:flex;
@@ -92,6 +94,7 @@
 @media screen and (min-width: 1024px){
     .applicationsBottom{
         width: 50vw;
+        height:14vh;
     }
     .applicationsTop{
         grid-template-columns: repeat(auto-fill,20%);
@@ -99,6 +102,10 @@
     .application{
         width:7vw;
         height:8vw;
+    }
+    .applicationBottom{
+        width:10vh;
+        height:11vh
     }
 }
 
@@ -120,6 +127,10 @@
     .application{
         width: 15vw;
         height:16vw;
+    }
+    .applicationBottom{
+        width:9vh;
+        height:9vh
     }
 }
 

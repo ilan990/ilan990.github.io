@@ -16,7 +16,7 @@ setInterval(function() {
 }, 1000);
 
 //Affichage des applications
-for (let i=1;i<19;i++){
+for (let i=1;i<16;i++){
   $(".applicationsTop").append("<div class='application'><div class='application"+i+"'></div><div class='applicationTitle"+i+"'></div></div>")
 }
 for (let i=1;i<5;i++){
