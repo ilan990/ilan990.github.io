@@ -6,7 +6,15 @@
     justify-content: space-around;
     overflow: hidden;
 }
-
+.frameApplicationProjets{
+    display:none;
+    width:100vw;
+    height:100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    background-color: aqua;
+}
 .backgroundAccueil {
     display:flex;
     position: absolute;
