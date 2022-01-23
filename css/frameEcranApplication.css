@@ -1,3 +1,4 @@
+/* Mobile */
 .frameEcranApplication{
     display:none;
     width:100vw;
@@ -40,7 +41,9 @@
     z-index: 1;
 }
 .applicationsBottom{
-    display:flex;
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 10px;
     justify-content: center;
     height:90px;
     width: 95vw;
@@ -57,7 +60,9 @@
     
 }
 .application1,.application2,.application3,.application4,.application5,.application6,.application7,.application8,.application9,.application10,.application11,.application12,.application13,.application14,.application15,.application16,.application17,.application18{
-    background-color: rgba(0, 0, 0, 0.712);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 0.7em;
     width: 60px;
     height: 60px;
@@ -76,50 +81,76 @@
 .applicationBottom{
     display:flex;
     flex-direction: column;
-    width: 70px;
-    height:75px;
-    margin: 0 2vw 1vh 2vw ;
+    margin: 10px;
+    align-items: center;
     
 }
-.applicationB1,.applicationB2,.applicationB3,.applicationB4{
+.applicationB1, .applicationB2, .applicationB3, .applicationB4{
     background-color: rgba(0, 0, 0, 0.712);
     border-radius: 0.7em;
-    height:83vh;
+    height: 50px;
+    width: 50px;
     margin: 1vh;
     cursor: pointer;
 }
-.applicationBTitle1,.applicationBTitle2,.applicationBTitle3,.applicationBTitle4{
+.applicationBTitle1, .applicationBTitle2, .applicationBTitle3, .applicationBTitle4 {
     background-color: rgb(165, 129, 123);
-    height:100px;
+    height: 10px;
+    width: 50px;
     margin: 0 1vh;
 }
+
+
+
+
+
+
+
+
+
+
+
 /* Desktop */
 @media screen and (min-width: 1024px){
-    .applicationsBottom{
+    .applicationsBottom {
         width: 50vw;
-        height:14vh;
+        height: 100px;
     }
     
     .application1,.application2,.application3,.application4,.application5,.application6,.application7,.application8,.application9,.application10,.application11,.application12,.application13,.application14,.application15,.application16,.application17,.application18{
-        width: 70px;
-        height: 70px;
+        width: 85px;
+        height: 85px;
     }
-    .applicationBottom{
-        width:70px;
-        height:70px;
+    .applicationB1, .applicationB2, .applicationB3, .applicationB4{
+        height: 75px;
+        width: 75px;
+    }
+    .applicationBTitle1, .applicationBTitle2, .applicationBTitle3, .applicationBTitle4 {
+        width: 75px;
     }
 }
-
+@media screen and (max-width: 300px){
+    .applicationBottom{
+        margin:0;
+    }
+    
+    .applicationBTitle1, .applicationBTitle2, .applicationBTitle3, .applicationBTitle4 {
+        width: 40px;
+    }
+  
+}
 /* Tablet */
 @media screen and (min-width: 728px) and (max-width:1023px){
     .applicationsBottom{
         width: 70vw; 
     }
-    
-}
-
-@media screen and (min-width: 525px) and (max-width:727px){
-   
-
+    .applicationB1, .applicationB2, .applicationB3, .applicationB4{
+        height: 55px;
+        width: 55px;
+    }
+    .applicationBottom{
+        height: 90px;
+        width: 90px; 
+    }    
 }
 

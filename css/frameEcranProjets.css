@@ -1,0 +1,19 @@
+.frameApplicationProjets{
+    display:none;
+    width:100vw;
+    height:100vh;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0
+}
+.partieTopNavigationInternet{
+    width:100vw;
+    height:50px;
+    background-color: rgb(65, 65, 65);
+}
+.titleSite{
+    width:200px;
+    height: 25px;
+    background-color: rgb(65, 65, 65);
+    border-top-right-radius: 1em;
+}
