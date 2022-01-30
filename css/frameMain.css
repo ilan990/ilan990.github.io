@@ -1,4 +1,10 @@
 @font-face {font-family: nordic;src: url(../fonts/vevey.ttf);}
+.frameMain{
+    background-image: url(../img/main/wallpaper.jpg);
+    padding-top: 25vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .tablette{
       display: flex;
       margin: auto;
@@ -32,8 +38,8 @@
     margin-top: 5vh auto;
     justify-content: center;
     text-align: center;
-    font-size: 10vh;
-    color: rgb(17, 89, 148);
+    font-size: 5vh;
+    color: rgb(34, 33, 33);
 }
 
 .tablette img{

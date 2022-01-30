@@ -6,6 +6,7 @@ body{
   font-family: Helvetica, sans-serif;
   overflow-x:hidden;
   overflow-y:hidden;
+  user-select: none;
   
 }
 body{

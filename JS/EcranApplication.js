@@ -24,6 +24,9 @@ setInterval(function() {
   }
   hours = hours + ":" + minutes ;
   $(".notifications").text(hours)
+  $(".notifications").append("<img class='imgWifi' src='img/Projets/wifi.png' alt='logo du wifi'>")
+  $(".notifications2").text(hours)
+  $(".notifications2").append("<img class='imgWifi' src='img/Projets/wifi.png' alt='logo du wifi'>")
 }, 1000);
 
 //Affichage des applications
