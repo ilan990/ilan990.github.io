@@ -49,7 +49,6 @@
     width: 95vw;
     background-color: rgba(255, 255, 255, 0.2);
     margin-bottom: 5vh;
-    border-radius: 0.7em;   
     z-index:1;
     align-items: center;
 }
@@ -63,7 +62,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0.7em;
     width: 60px;
     height: 60px;
     margin: 1vh;
@@ -76,6 +74,7 @@
     color: whitesmoke;
     font-size: 2vh;
     opacity: 0.8;
+    text-align: center;
     
 }
 .applicationBottom{
@@ -86,18 +85,20 @@
     
 }
 .applicationB1, .applicationB2, .applicationB3, .applicationB4{
-    background-color: rgba(0, 0, 0, 0.712);
-    border-radius: 0.7em;
     height: 50px;
     width: 50px;
-    margin: 1vh;
+    margin: 1vh 1vh 0 1vh;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 .applicationBTitle1, .applicationBTitle2, .applicationBTitle3, .applicationBTitle4 {
-    background-color: rgb(165, 129, 123);
     height: 10px;
     width: 50px;
     margin: 0 1vh;
+    text-align: center;
 }
 
 

@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .partieTopNavigationInternet img{
     margin: 0 1px 0 10px;
     height:15px;
@@ -83,8 +84,88 @@
 .cadenas{
     margin-right: 5px;
 }
+.partieBottomNavigationInternet{
+    height: calc(95vh - 42px);
+    overflow-y: scroll;
+    color: black;
+    padding: 0 1vw;
+    background-color: white;
+}
+.partieBottomNavigationInternet h1{
+    width: 98vw;
+    text-align: center;
+}
+
+.projets{
+    display: flex;
+    flex-direction: column;
+    width:98vw;
+    height: 500px;
+    flex-flow: wrap;
+    justify-content: center;
+
+}
+.partieBottomNavigationInternet p{
+    width: 98vw;
+    text-align: center;
+    font-size: 5em;
+}
+.card{
+    width:90vw;
+    height:320px;
+    margin: 0 10px 10px 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color:rgba(128, 128, 128, 0.637);
+    box-shadow: 10px 5px 5px black;
+    border: none;
+
+   
+}
+.blocGrisDisquette{
+    position:absolute;
+    width: 180px;
+    height:130px;
+    background-color: grey;
+    top:0;
+    text-align: center;
+    border: none;
+}
+.blocNoirDisquette{
+    position: absolute;
+    top:20px;
+    width: 45px;
+    height: 100px;
+    left:150px;
+    background-color:black;
+    z-index: 2;
+}
+.logoSVGProjet{
+    display: none;
+    height:30vw;
+    width: auto;
+}
+.blocRougeEtBlancDisquette{
+    position: absolute;
+    width:180px;
+    height:160px;
+    bottom:0;
+    background-color: #fff;
+}
+
 @media screen and (min-width:866px) {
     .url{
         width:83vw;
+    }
+    .card{
+        width:250px;
+    }
+    
+    .logoSVGProjet{
+        display: flex;
     }
 }

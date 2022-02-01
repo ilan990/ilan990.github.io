@@ -17,6 +17,9 @@ h1{
     font-family: nordic;
     
 }
+h5{
+  color: black;
+}
 html {
     overflow-x: none;
     overflow-y:none;
