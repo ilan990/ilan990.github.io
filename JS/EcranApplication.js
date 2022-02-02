@@ -1,7 +1,7 @@
 $(function(){
-let frames=["frameMain","frameAccueil","frameEcranApplication","frameApplicationProjets"];
-let titleApplicationTop=[["Projets","CV"],["Profil"]]
-let imgApplication=[["https://img.icons8.com/color/48/000000/ms-edge-new.png","img/Applications/pencil.png"],["img/Applications/profil.png"]]
+let frames=["frameMain","frameAccueil","frameEcranApplication","frameApplicationProjets","frameApplicationCV"];
+let titleApplicationTop=[["Projets","CV","Stages"],["Profil"]]
+let imgApplication=[["https://img.icons8.com/color/48/000000/ms-edge-new.png","img/Applications/CV.png"],["img/Applications/profil.png"]]
 function framevisible(nbr){
   for(let i=0;i<frames.length;i++){
     if (i!=nbr){
@@ -30,8 +30,8 @@ setInterval(function() {
 }, 1000);
 
 //Affichage des applications
-for (let i=3;i<5;i++){
-  $(".applicationsTop").append("<div class='application' id="+i+"><div class='application"+i+"'><img src='"+imgApplication[0][i-3]+"'/></div><div class='applicationTitle"+i+"'>"+titleApplicationTop[0][i-3]+"</div></div>")
+for (let i=3;i<6;i++){
+  $(".applicationsTop").append("<div class='application' id="+i+"><div class='application"+(i-3)+"'><img class='imgTop"+i+"' src='"+imgApplication[0][i-3]+"'/></div><div class='applicationTitle"+i+"'>"+titleApplicationTop[0][i-3]+"</div></div>")
 }
 for (let i=1;i<2;i++){
   $(".applicationsBottom").append("<div class='applicationBottom'><div class='applicationB"+i+"'><img src='"+imgApplication[1][i-1]+"'/></div><div class='applicationBTitle"+i+"'>"+titleApplicationTop[1][i-1]+"</div></div>")

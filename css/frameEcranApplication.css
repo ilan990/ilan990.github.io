@@ -33,7 +33,9 @@
     }
 
 .applicationsTop{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);
+    grid-template-rows: 0.2fr 0.5fr 1.2fr 0.8fr ;
     justify-items: center;
     height:73vh;
     width:90vw;
@@ -58,7 +60,7 @@
     margin: 1vh 2vw ;
     
 }
-.application1,.application2,.application3,.application4,.application5,.application6,.application7,.application8,.application9,.application10,.application11,.application12,.application13,.application14,.application15,.application16,.application17,.application18{
+.application0,.application1,.application2,.application3,.application4,.application5,.application6,.application7,.application8,.application9,.application10,.application11,.application12,.application13,.application14,.application15,.application16,.application17,.application18{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,11 +99,12 @@
 .applicationBTitle1, .applicationBTitle2, .applicationBTitle3, .applicationBTitle4 {
     height: 10px;
     width: 50px;
-    margin: 0 1vh;
+    margin: 4px 1px;
     text-align: center;
 }
-
-
+.imgTop0,.imgTop2,.imgTop3,.imgTop4,.applicationB1 img{
+    width: 48px;
+}
 
 
 
@@ -118,7 +121,7 @@
         height: 100px;
     }
     
-    .application1,.application2,.application3,.application4,.application5,.application6,.application7,.application8,.application9,.application10,.application11,.application12,.application13,.application14,.application15,.application16,.application17,.application18{
+    .application0,.application1,.application2,.application3,.application4,.application5,.application6,.application7,.application8,.application9,.application10,.application11,.application12,.application13,.application14,.application15,.application16,.application17,.application18{
         width: 85px;
         height: 85px;
     }
@@ -130,11 +133,22 @@
         width: 75px;
     }
 }
+@media screen and (max-width:400px) {
+    .applicationsTop{
+        display: grid;
+        grid-template-columns: repeat(3, 0.5fr);
+    }
+    
+}
 @media screen and (max-width: 300px){
     .applicationBottom{
         margin:0;
     }
-    
+    .applicationsTop{
+        display: grid;
+        grid-template-columns: repeat(2, 0.5fr);
+       
+    }
     .applicationBTitle1, .applicationBTitle2, .applicationBTitle3, .applicationBTitle4 {
         width: 40px;
     }
