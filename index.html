@@ -14,11 +14,14 @@
     <link rel="stylesheet" href="css/frameEcranApplication.css" />
     <link rel="stylesheet" href="css/frameEcranProjets.css" />
     <link rel="stylesheet" href="css/frameEcranCV.css" />
+    <link rel="stylesheet" href="css/frameEcranProfil.css" />
+
     <script src="JS/EcranMain.js"></script>
     <script src="JS/EcranAccueil.js"></script>
     <script src="JS/EcranApplication.js"></script>
     <script src="JS/EcranProjets.js"></script>
     <script src="JS/EcranCV.js"></script>
+    <script src="JS/EcranProfil.js"></script>
    
 </head>
 <body >
@@ -66,7 +69,7 @@
             </span>
             <div style="display: flex;align-items:center">
                 <img class="cadenas" src="img/Projets/cadenas.png" alt="cadenas by freepik">   
-                <input class="url" value="https://www.projetIlanAssouline.fr/Accueil"></input>
+                <input id="urlChange" class="url" value="https://www.projetIlanAssouline.fr/projetsMain"></input>
             </div>
             </div> 
             <div class="partieBottomNavigationInternet">
@@ -108,10 +111,45 @@
             <div class="partieBottomNavigationInternet">
                 <p>CV</p>
                 <div class="cv"></div>
-            </div>    
-       
+            </div>           
     </div>
-
+    <!-- frame Profil -->
+    <div class="frameProfil">
+        <div class="notifications2"></div>
+        <div class="topPage">
+            <p>Contacts</p>
+            <img class="fermerProjets croix2" src="img/Projets/croix2.png" alt="croix permettant de fermer l'applications">
+        </div>
+        <div class="photo-identite">
+            <div class="identite">
+                <h1>Ilan ASSOULINE</h1>
+                
+            </div>
+            <div class="photoIlan">
+                <img src="img/Profil/Ilan.jpg" alt="photo du developpeur">
+            </div> 
+        </div>
+        <div class="informationsIdentite">
+            <table class="tableauInformation">
+                <tr>
+                    <td>INTRO :</td>
+                    <td>Salut, moi c'est Ilan<br>Bienvenue sur mon Site</td>
+                </tr>
+                <tr>
+                    <td>AGE :</td>
+                    <td>22 ans</td>
+                </tr>
+                <tr>
+                    <td>PROFFESION :</td>
+                    <td>Apprenti developpeur</td>
+                </tr>
+                <tr>
+                    <td>NUMERO :</td>
+                    <td>07 83 76 92 91</td>
+                </tr>
+            </table>
+        </div>
+        </div>
     
 
       

@@ -13,9 +13,7 @@ body{
   position:relative;
 }
 h1{  
-    position: absolute;
-    font-family: nordic;
-    
+    font-family: nordic;  
 }
 h5{
   color: black;

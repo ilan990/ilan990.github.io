@@ -1,13 +1,34 @@
 $(function(){
 let frames=["frameMain","frameAccueil","frameEcranApplication","frameApplicationProjets","frameApplicationCV"];
 let titleApplicationTop=[["Projets","CV","Stages"],["Profil"]]
-let imgApplication=[["https://img.icons8.com/color/48/000000/ms-edge-new.png","img/Applications/CV.png"],["img/Applications/profil.png"]]
+let imgApplication=[["https://img.icons8.com/color/48/000000/ms-edge-new.png","img/Applications/CV.png","img/Applications/image.png"],["img/Applications/profil.png"]]
+let frameAppBottom=["frameProfil"];
 function framevisible(nbr){
   for(let i=0;i<frames.length;i++){
     if (i!=nbr){
       $("."+frames[i]).css("display","none");
+      
     }else{
+      for(let j=0;j<frameAppBottom.length;j++){
+        $("."+frameAppBottom[j]).css("display","none");
+      }
       $("."+frames[i]).css("display","flex");
+    }
+  }
+}
+function framevisibleBottom(nbr){
+  for(let i=0;i<frameAppBottom.length;i++){
+
+    if (frameAppBottom[i]!=nbr){
+      console.log('non')
+      $("."+frameAppBottom[i]).css("display","none");
+      
+
+    }else{
+      for(let j=0;j<frames.length;j++){
+          $("."+frames[j]).css("display","none");
+        }
+      $("."+frameAppBottom[i]).css("display","flex");
     }
   }
 }
@@ -34,11 +55,14 @@ for (let i=3;i<6;i++){
   $(".applicationsTop").append("<div class='application' id="+i+"><div class='application"+(i-3)+"'><img class='imgTop"+i+"' src='"+imgApplication[0][i-3]+"'/></div><div class='applicationTitle"+i+"'>"+titleApplicationTop[0][i-3]+"</div></div>")
 }
 for (let i=1;i<2;i++){
-  $(".applicationsBottom").append("<div class='applicationBottom'><div class='applicationB"+i+"'><img src='"+imgApplication[1][i-1]+"'/></div><div class='applicationBTitle"+i+"'>"+titleApplicationTop[1][i-1]+"</div></div>")
+  $(".applicationsBottom").append("<div class='applicationBottom' id='"+frameAppBottom[i-1]+"'><div class='applicationB"+i+"'><img src='"+imgApplication[1][i-1]+"'/></div><div class='applicationBTitle"+i+"'>"+titleApplicationTop[1][i-1]+"</div></div>")
 }
 
 $(".application").click(function(){
   framevisible($(this).attr('id'));
 })
 
+$(".applicationBottom").click(function(){
+  framevisibleBottom($(this).attr('id'));
+})
 })

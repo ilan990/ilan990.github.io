@@ -23,6 +23,7 @@ $(function(){
         }else{
           console.log("ok")
           $("."+frameProjets[i]).css("display","flex");
+          $("#urlChange").val("https://www.projetIlanAssouline.fr/"+frameProjets[i])
         }
       }
     }
