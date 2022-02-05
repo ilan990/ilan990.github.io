@@ -27,16 +27,16 @@
     z-index:2;}
 .numbers{
     display: grid;
-    width:50vw;
-    grid-template-columns: repeat(3,33%);
-    padding:0 25vw;
+    width: 100vw;
     justify-content: center;
+    grid-template-columns: repeat(3,33%);
     
 }
 .mdp{
     display: flex;
     flex-direction: column;
     z-index: 2;
+    align-items: center;
 }
 .points{
     display:flex;
@@ -55,18 +55,26 @@
     
 }
 .number{
-    width:auto;
+    width: 60px;
+    height: 60px;
     display:flex;
     justify-content: center;
     z-index:2;
     font-size: 50px;
-   
+    border-radius: 30px;
+    margin: 4px auto;
+}
+.number:hover{
+    background-color: rgb(197, 197, 197);
 }
 .number p{
     height: 0;
     margin:0 0 60px 0;
     cursor: pointer;
     user-select: none;
+    background: red;
+   
+
 }
 
 .tryTxt{
