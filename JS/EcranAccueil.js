@@ -30,7 +30,7 @@ setInterval(function() {
 
 //points pour le mot de passe
 for (let i=0;i<4;i++){
-  $(".points").append("<div class='point point"+i+"'></div>")
+  $(".points").append("<span class='point point"+i+"'></span>")
 }
  
 

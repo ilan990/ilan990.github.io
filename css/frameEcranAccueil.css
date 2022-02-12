@@ -29,7 +29,7 @@
     display: grid;
     width: 100vw;
     justify-content: center;
-    grid-template-columns: repeat(3,33%);
+    grid-template-columns: repeat(3,17%);
     
 }
 .mdp{
@@ -51,7 +51,7 @@
     border: solid;
     border-radius: 50%;
     z-index:2;
-    margin:0 1vw 5vw 0;   
+    margin:3vh 1vw;   
     
 }
 .number{
@@ -81,6 +81,6 @@
     display:flex;
     justify-content: center;
     margin-bottom: 2vh;
-    font-size:1.5vh;
+    font-size:1.5em;
     color:black;
 }
