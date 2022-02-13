@@ -16,11 +16,11 @@
 }
 
 .partieTopNavigationInternet img{
-    margin: 0 1px 0 10px;
+    margin: 0 1px 0 4px;
     height:15px;
     cursor: pointer;
 }
-.fleche-droite,.fleche-gauche-gris{
+.fleche-droite,.fleche-gauche{
     display: none;
 }
 .titleSite{
@@ -28,11 +28,10 @@
     justify-content: space-between;
     align-items:center;
     padding: 0 15px;
-    width:10%;
+    width:100vw;
     min-width: 200px;
     height: 25px;
     background-color: rgb(65, 65, 65);
-    border-top-right-radius: 1em;
     z-index: 1;
     font-size: 10px;
     font-weight:bold;
@@ -43,7 +42,7 @@
     
 }
 .croix2{
-    margin-right: 10px;
+    display: none;
 }
 .topPage{
     width:100%;
@@ -65,7 +64,8 @@
         align-items: center;
         height:5vh;
         width:99vw;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgb(255 255 255 / 32%);
+        color: black;
         font-size: 2vh;
         z-index: 1;
 }
@@ -88,11 +88,9 @@
     height: calc(95vh - 42px);
     overflow-y: scroll;
     color: black;
-    padding: 0 1vw;
     background-color: white;
 }
 .partieBottomNavigationInternet h1{
-    width: 98vw;
     text-align: center;
 }
 
@@ -102,12 +100,9 @@
     width:98vw;
     flex-flow: wrap;
     justify-content: center;
+    overflow-y: scroll;
 }
-.partieBottomNavigationInternet p{
-    width: 98vw;
-    text-align: center;
-    font-size: 5em;
-}
+
 .card{
     width:300px;
     height:320px;
@@ -173,9 +168,12 @@
     border-radius: 5px;
     
 }
-.projetsMain{
+.projetsMain{ 
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
 .blocRougeEtBlancDisquette p {
     position: absolute;
     text-align: center;
@@ -187,18 +185,110 @@
 .glpi,.laFleur,.gsbJava,.gsbSymfony{
     display: none;
     flex-direction: column;
-    width:98vw;
-    height: 100px;
-    background-color: aqua;
-    flex-flow: wrap;
-    justify-content: center;
+    height: 100%;
+    overflow-y: scroll;
+    
 }
+.gsbSymfony{
+    position: relative;
+    background-color: #005377;
+    color: #FFE2D1;
+}
+.banner-gsb-symfony img{
+    height: 20vh;
+    object-fit: cover;
+    width: 100vw;
+}
+.banner-gsb-symfony{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+.banner-gsb-symfony p{
+    position: absolute;
+    bottom: -60px;
+    font-weight: 900;
+    font-size: 227%;
+    
+}
+.gsbSymfony h1{
+    color: #45CB85;
+}
+.gsbSymfony p{
+    color: #F4E8C1;
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.banner-gsb-symfony :nth-child(2){
+    color: rgb(187, 67, 67);
+}
+.contraintes-gsb-symfony{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #70A0AF;
+    width: 90vw;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+.img-contraintes-gsb-symfony{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.techniques-gsb-symfony{
+    display: flex;
+    flex-direction: column;
+}
+.logo-uwamp{
+    width: 45px;
+    margin: auto;
+}
+.logoHCJP{
+    width: 160px;
+    margin: auto;
+}
+.contraintes-gsb-symfony h2{
+    margin-left: 10px;
+    color: #D3F9B5;
+}
+.flex-around{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-gsb-symfony{
+    width: 70vw;
+    background-color: #706993;
+    border-radius: 10px;
+    margin: 10px auto;
+   
+}
+
 
 @media screen and (min-width:866px) {
     .url{
         width:83vw;
     }
     .logoSVGProjet{
+        display: flex;
+    }
+    .titleSite{
+        border-top-right-radius: 1em;
+        width:10%;
+    }
+    .flex-around{
+        flex-direction: row;
+    }
+    .container-gsb-symfony{
+        width: 16vw;
+       
+    }
+    .croix2{
+        margin-right: 10px;
         display: flex;
     }
 }
