@@ -29,17 +29,21 @@ for (let i=0;i<4;i++){
   $(".projets").append("<div id='"+frameProjets[i]+"' class='card frm'><div class='blocNoirDisquette'></div><div class='blocGrisDisquette'></div><div class='blocRougeEtBlancDisquette'><div class='blocRougeDisquette'>"+titleDisquette[i]+"</div><p>"+explicationDisquette[i]+"</p></div></div>")
 }
 
-$(".fleche-gauche").click(function(){frameProjetvisible("projetsMain")})
+$(".fleche-gauche-gris").click(function(){frameProjetvisible("projetsMain")})
 $(".fermerProjets").click(function(){framevisible(2);frameProjetvisible("projetsMain")})
 $(".projets").children().click(function(){
       frameProjetvisible($(this).attr("id"));
 })
-
-
-
-
-
-
-
-
+$(".buttonMain").click(function(){
+  $(".Ajout-Symfony,.Liste-Symfony").hide();
+  $(".Main-Symfony").show();
+})
+$(".buttonAjout").click(function(){
+  $(".Main-Symfony,.Liste-Symfony").hide();
+  $(".Ajout-Symfony").show();
+})
+$(".buttonListe").click(function(){
+  $(".Ajout-Symfony,.Main-Symfony").hide();
+  $(".Liste-Symfony").show();
+})
 })

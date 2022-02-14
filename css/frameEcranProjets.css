@@ -64,7 +64,7 @@
         align-items: center;
         height:5vh;
         width:99vw;
-        background-color: rgb(255 255 255 / 32%);
+        background-color: rgb(136, 135, 135);
         color: black;
         font-size: 2vh;
         z-index: 1;
@@ -267,11 +267,43 @@
     margin: 10px auto;
    
 }
+.container-gsb-symfony:hover{
+    background-color: rgb(128, 125, 168);
+}
 
+.interfacegsbsymfony img{
+    width: 80vw;
+    margin: 10px;
+}
+.interfacegsbsymfony{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+.buttons-interface-symfony{
+    display: flex;
+    justify-content: center;
+}
+.buttons-interface-symfony button{
+    width: 20vw;
+    height: 7vh;
+    margin: 10px;
+    background-color: #005377;
+    border: none;
+    cursor: pointer;
+}
+.buttons-interface-symfony button:hover{
+    background-color: #0378aa;
+    color: white; 
+}
 
 @media screen and (min-width:866px) {
     .url{
         width:83vw;
+    }
+    .interfacegsbsymfony img{
+        width: 37vw;
+        margin: 10px;
     }
     .logoSVGProjet{
         display: flex;
@@ -290,5 +322,6 @@
     .croix2{
         margin-right: 10px;
         display: flex;
+        height: 20px;
     }
 }
