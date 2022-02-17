@@ -44,6 +44,11 @@
 .croix2{
     display: none;
 }
+.croix{
+    margin:auto 5px;
+    display: flex;
+    height: 20px;
+}
 .topPage{
     width:100%;
     height: 25px;
@@ -159,6 +164,7 @@
     height:30vw;
     width: auto;
 }
+
 .blocRougeEtBlancDisquette{
     position: absolute;
     width:180px;
@@ -182,49 +188,50 @@
     width: 175px;
     top:24.1px;
 }
-.glpi,.laFleur,.gsbJava,.gsbSymfony{
+.laFleur,.gsbJava,.gsbSymfony{
     display: none;
     flex-direction: column;
     height: 100%;
     overflow-y: scroll;
     
 }
-.gsbSymfony{
+.gsbSymfony,.gsbJava{
     position: relative;
     background-color: #005377;
     color: #FFE2D1;
 }
-.banner-gsb-symfony img{
+.banner-gsb-symfony img,.banner-gsb-java img{
     height: 20vh;
     object-fit: cover;
     width: 100vw;
 }
-.banner-gsb-symfony{
+.banner-gsb-symfony,.banner-gsb-java{
     position: relative;
     display: flex;
     justify-content: center;
     
 }
-.banner-gsb-symfony p{
+.banner-gsb-symfony p,.banner-gsb-java p{
     position: absolute;
     bottom: -60px;
     font-weight: 900;
     font-size: 227%;
     
 }
-.gsbSymfony h1{
+.gsbSymfony h1,.gsbJava h1{
     color: #45CB85;
 }
-.gsbSymfony p{
+
+.gsbSymfony p,.gsbJava p{
     color: #F4E8C1;
     text-align: center;
     margin-right: 30px;
     margin-left: 30px;
 }
-.banner-gsb-symfony :nth-child(2){
+.banner-gsb-symfony :nth-child(2),.banner-gsb-java :nth-child(2){
     color: rgb(187, 67, 67);
 }
-.contraintes-gsb-symfony{
+.contraintes-gsb-symfony,.contraintes-gsb-java{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -238,36 +245,70 @@
     display: flex;
     flex-direction: column;
 }
-.techniques-gsb-symfony{
+.techniques-gsb-symfony,.techniques-gsb-java{
     display: flex;
     flex-direction: column;
 }
+.logo-java{
+    width: 100px;
+    margin: auto;
+}
+.logo-uwamp-java{
+    width: 70px;
+    margin: 25px 15px 5px 15px;
+}
 .logo-uwamp{
-    width: 45px;
+    width: 70px;
     margin: auto;
 }
 .logoHCJP{
     width: 160px;
     margin: auto;
 }
-.contraintes-gsb-symfony h2{
+.contraintes-gsb-symfony h2,.contraintes-gsb-java h2{
     margin-left: 10px;
     color: #D3F9B5;
+}
+.contraintes-gsb-java ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    flex-direction: column;
+    width: 80vw;
+    margin: inherit;
+}
+.Ressources-contraintes-java{
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe83;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.Ressources-contraintes-java:hover{
+    box-shadow: 10px 5px 5px rgb(128, 125, 168);
+}
+.Ressources-contraintes-java h2{
+    margin: 20px;
+   
 }
 .flex-around{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
-.container-gsb-symfony{
+.container-gsb-symfony,.container-gsb-java{
     width: 70vw;
     background-color: #706993;
     border-radius: 10px;
     margin: 10px auto;
    
 }
-.container-gsb-symfony:hover{
+.container-gsb-symfony:hover,.container-gsb-java:hover{
     background-color: rgb(128, 125, 168);
 }
 
@@ -275,16 +316,21 @@
     width: 80vw;
     margin: 10px;
 }
-.interfacegsbsymfony{
+.interfacegsbjava img{
+    margin: 10px;
+    max-width: 60vw;
+    max-height: 40vh;
+}
+.interfacegsbsymfony,.interfacegsbjava{
     display: flex;
     justify-content: center;
     flex-flow: wrap;
 }
-.buttons-interface-symfony{
+.buttons-interface-symfony,.buttons-interface-java{
     display: flex;
     justify-content: center;
 }
-.buttons-interface-symfony button{
+.buttons-interface-symfony button,.buttons-interface-java button {
     width: 20vw;
     height: 7vh;
     margin: 10px;
@@ -292,10 +338,11 @@
     border: none;
     cursor: pointer;
 }
-.buttons-interface-symfony button:hover{
+.buttons-interface-symfony button:hover, .buttons-interface-java button:hover{
     background-color: #0378aa;
     color: white; 
 }
+
 
 @media screen and (min-width:866px) {
     .url{
@@ -315,13 +362,27 @@
     .flex-around{
         flex-direction: row;
     }
-    .container-gsb-symfony{
+    .container-gsb-symfony,.container-gsb-java{
         width: 16vw;
        
     }
     .croix2{
-        margin-right: 10px;
+        margin-right: 5px;
         display: flex;
         height: 20px;
+    }
+    .contraintes-gsb-java ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        flex-direction: row;
+        width: 40vw;
+    }
+    .Ressources-contraintes-java{
+        display: flex;
+        flex-direction: column!important;
+        margin: auto 20px;
     }
 }

@@ -2,8 +2,8 @@ $(function(){
 
     let frames=["frameMain","frameAccueil","frameEcranApplication","frameApplicationProjets"];
     let titleDisquette=["GSB SYMFONY","GSB JAVA","LA FLEUR","GLPI"];
-    let explicationDisquette=["Création d'un CRUD permettant de gerer les visiteurs au seins d'une region en symfony","laboratoire pharmaceutique ayant besoin d'un logiciel pour organiser leurs données ","Création d'une boutique en ligne pour un fleuriste","Gestion du parc informatique avec un système de tickets"];
-    let frameProjets=["gsbSymfony","gsbJava","laFleur","glpi","projetsMain"];
+    let explicationDisquette=["Création d'un CRUD permettant de gerer les visiteurs au sein d'une region en symfony","laboratoire pharmaceutique ayant besoin d'un logiciel pour organiser leurs données ","Création d'une boutique en ligne pour un fleuriste","Gestion du parc informatique avec un système de tickets"];
+    let frameProjets=["gsbSymfony","gsbJava","laFleur","projetsMain"];
     function framevisible(nbr){
       for(let i=0;i<frames.length;i++){
         if (i!=nbr){
@@ -25,7 +25,7 @@ $(function(){
       }
     }
 //Affichage des projets
-for (let i=0;i<4;i++){
+for (let i=0;i<3;i++){
   $(".projets").append("<div id='"+frameProjets[i]+"' class='card frm'><div class='blocNoirDisquette'></div><div class='blocGrisDisquette'></div><div class='blocRougeEtBlancDisquette'><div class='blocRougeDisquette'>"+titleDisquette[i]+"</div><p>"+explicationDisquette[i]+"</p></div></div>")
 }
 
@@ -35,15 +35,15 @@ $(".projets").children().click(function(){
       frameProjetvisible($(this).attr("id"));
 })
 $(".buttonMain").click(function(){
-  $(".Ajout-Symfony,.Liste-Symfony").hide();
-  $(".Main-Symfony").show();
+  $(".Ajout-application,.Liste-application").hide('3000');
+  $(".Main-application").show('3000');
 })
 $(".buttonAjout").click(function(){
-  $(".Main-Symfony,.Liste-Symfony").hide();
-  $(".Ajout-Symfony").show();
+  $(".Main-application,.Liste-application").hide('3000');
+  $(".Ajout-application").show('3000');
 })
 $(".buttonListe").click(function(){
-  $(".Ajout-Symfony,.Main-Symfony").hide();
-  $(".Liste-Symfony").show();
+  $(".Ajout-application,.Main-application").hide('3000');
+  $(".Liste-application").show('3000');
 })
 })
