@@ -269,7 +269,7 @@
     margin-left: 10px;
     color: #D3F9B5;
 }
-.contraintes-gsb-java ul{
+.listedecontraintes{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
@@ -371,18 +371,19 @@
         display: flex;
         height: 20px;
     }
-    .contraintes-gsb-java ul{
+    .listedecontraintes{
         display: flex;
         justify-content: space-evenly;
         list-style: none;
         text-align: center;
         padding: 0;
         flex-direction: row;
-        width: 40vw;
+        width: 86vw;
     }
     .Ressources-contraintes-java{
         display: flex;
         flex-direction: column!important;
         margin: auto 20px;
+        width: 58vw;
     }
 }
