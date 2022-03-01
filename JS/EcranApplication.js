@@ -1,18 +1,21 @@
 $(function(){
-let frames=["frameMain","frameAccueil","frameEcranApplication","frameApplicationProjets","frameApplicationCV"];
+let frames=["frameMain","frameAccueil","frameEcranApplication","frameApplicationProjets","frameApplicationCV",'frameStage'];
 let titleApplicationTop=[["Projets","CV","Experiences"],["Profil"]]
-let imgApplication=[["https://img.icons8.com/color/48/000000/ms-edge-new.png","img/Applications/CV.png","img/Applications/image.png"],["img/Applications/profil.png"]]
+let imgApplication=[["https://img.icons8.com/color/48/000000/ms-edge-new.png","img/Applications/CV.png","img/Applications/safari.png"],["img/Applications/profil.png"]]
 let frameAppBottom=["frameProfil"];
 function framevisible(nbr){
   for(let i=0;i<frames.length;i++){
     if (i!=nbr){
       $("."+frames[i]).css("display","none");
+      $("."+frameAppBottom[i]).css("display","none")
       
     }else{
       for(let j=0;j<frameAppBottom.length;j++){
         $("."+frameAppBottom[j]).css("display","none");
+       
       }
       $("."+frames[i]).css("display","flex");
+      $("."+frameAppBottom[i]).css("display","none")
     }
   }
 }

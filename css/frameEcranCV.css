@@ -152,7 +152,8 @@
     flex-direction: row;
   }
   .web table{
-    width: 40vw;
+    width: 26vw;
+    margin: 25px 50px;
   }
  
 }

@@ -56,7 +56,8 @@
 .application{
     display:flex;
     flex-direction: column;
-    margin: 1vh 2vw ;
+    margin:2vh auto;
+    align-items: center;
     
 }
 .application0,.application1,.application2,.application3,.application4,.application5,.application6,.application7,.application8,.application9,.application10,.application11,.application12,.application13,.application14,.application15,.application16,.application17,.application18{
@@ -101,7 +102,7 @@
     margin: 4px 1px;
     text-align: center;
 }
-.imgTop0,.imgTop2,.imgTop3,.imgTop4,.applicationB1 img{
+.imgTop0,.imgTop2,.imgTop3,.imgTop4,.imgTop5,.applicationB1 img{
     width: 48px;
 }
 

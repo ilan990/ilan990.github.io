@@ -1,0 +1,99 @@
+.frameStage{
+    display:none;
+    width:100vw;
+    height:100vh;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: blue;
+}
+
+
+.card-stage{
+    position: relative;
+    display: flex;
+    width: 75vw;
+    height: 40vh;
+    margin:auto;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px grey;
+    cursor: pointer;
+}
+.card-stage p{
+    margin: auto 10px;
+    text-align: center;
+    
+   
+}
+
+
+.exemple-experiences{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(145, 145, 145);
+    flex-direction: column;
+}
+.volet{
+    position: absolute;
+    display: flex;
+    height: 40vh;
+    width: 75vw;
+    top:0;
+    background-color: rgb(43, 41, 41);
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+.volet h1{
+    font-size: 2em;
+}
+.card-stage:hover>.volet{
+    top:-45vh;
+    transition-duration: 500ms;
+  
+
+}
+
+.card-stage button{
+    display: flex;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    height: 4vh;
+    align-items: center;
+    border-radius: 1px;
+  
+}
+.card-stage button:hover{
+    background-color: black;
+    color: white;
+    transition-duration: 700ms;
+}
+
+@media screen and (min-width:650px) {
+    .exemple-experiences{
+        flex-direction: row;
+    } 
+    .card-stage{
+        width: 25vw;
+        height: 30vw;   
+    }
+    .volet{
+        height: 30vw;
+        width: 25vw;
+    }
+    .card-stage:hover>.volet{
+        top:-30vw;
+        transition-duration: 500ms;
+    
+    }
+    .volet h1{
+        font-size: 4em;
+    }
+}

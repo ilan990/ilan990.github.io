@@ -52,5 +52,7 @@ $(function(){
       },100)
     resizeScreen();
     initDevicesFrame1();
+   
+
     
 })

@@ -223,19 +223,20 @@
 }
 
 .gsbSymfony p,.gsbJava p{
-    color: #F4E8C1;
+    color: #c9c9c9;
     text-align: center;
     margin-right: 30px;
     margin-left: 30px;
 }
 .banner-gsb-symfony :nth-child(2),.banner-gsb-java :nth-child(2){
     color: rgb(187, 67, 67);
+    text-shadow: 5px 5px 8px pink;
 }
 .contraintes-gsb-symfony,.contraintes-gsb-java{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #70A0AF;
+    background-color: #c9c9c9;
     width: 90vw;
     margin: 20px auto;
     border-radius: 20px;
@@ -267,7 +268,7 @@
 }
 .contraintes-gsb-symfony h2,.contraintes-gsb-java h2{
     margin-left: 10px;
-    color: #D3F9B5;
+    color: #005377;
 }
 .listedecontraintes{
     display: flex;
