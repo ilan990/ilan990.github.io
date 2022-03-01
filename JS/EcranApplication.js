@@ -14,8 +14,13 @@ function framevisible(nbr){
         $("."+frameAppBottom[j]).css("display","none");
        
       }
+      if(nbr=5){
+        $(".main").css("display","flex");
+        $(".Lilmod-Et-Lelamed, .Centrale-Optique").css("display","none");
+      }
       $("."+frames[i]).css("display","flex");
       $("."+frameAppBottom[i]).css("display","none")
+      
     }
   }
 }

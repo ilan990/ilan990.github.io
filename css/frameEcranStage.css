@@ -75,6 +75,13 @@
     color: white;
     transition-duration: 700ms;
 }
+.Lilmod-Et-Lelamed,.main,.Centrale-Optique{
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: scroll;
+    
+}
 
 @media screen and (min-width:650px) {
     .exemple-experiences{

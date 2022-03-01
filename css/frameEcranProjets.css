@@ -201,7 +201,7 @@
     color: #FFE2D1;
 }
 .banner-gsb-symfony img,.banner-gsb-java img{
-    height: 20vh;
+    height: 40vh;
     object-fit: cover;
     width: 100vw;
 }
@@ -218,8 +218,15 @@
     font-size: 227%;
     
 }
+.gsbSymfony h1:nth-child(2),.gsbJava h1:nth-child(2){
+    margin-top: 60px;
+}
 .gsbSymfony h1,.gsbJava h1{
-    color: #45CB85;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.gsbSymfony h1:nth-child(1),.gsbJava h1:nth-child(1){
+    color: #005377;
 }
 
 .gsbSymfony p,.gsbJava p{
@@ -267,7 +274,7 @@
     margin: auto;
 }
 .contraintes-gsb-symfony h2,.contraintes-gsb-java h2{
-    margin-left: 10px;
+    text-align: center;
     color: #005377;
 }
 .listedecontraintes{
@@ -304,13 +311,9 @@
 
 .container-gsb-symfony,.container-gsb-java{
     width: 70vw;
-    background-color: #706993;
-    border-radius: 10px;
+    background-color: #005377;
     margin: 10px auto;
    
-}
-.container-gsb-symfony:hover,.container-gsb-java:hover{
-    background-color: rgb(128, 125, 168);
 }
 
 .interfacegsbsymfony img{
