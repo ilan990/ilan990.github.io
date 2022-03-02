@@ -82,7 +82,82 @@
     overflow-y: scroll;
     
 }
+.Centrale-Optique,.Lilmod-Et-Lelamed{
+    flex-direction: column!important;
+}
+.frameStage div:nth-child(6){
+    background-color: rgb(238, 238, 238);
+}
+.Centrale-Optique h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.banner-centrale img{
+    height: 40vh;
+    object-fit: cover;
+    width: 100vw;
+    margin-top: calc(50px + 5vh);
+}
+.banner-centrale{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+   
+}
+.container-centrale{
+    height: 200px;
+    border: 2px solid black;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.container-centrale ul{
+    list-style: none;
+    padding: 0;
+    
+}
+.container-infos-centrale{
+    border: 2px solid black;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 415px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.row:nth-child(2){
+    float: right;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 3; margin-left: 10px; }
+    .div2 { grid-area: 2 / 1 / 3 / 3; margin-left: 10px;}
+    .div3 { grid-area: 1 / 3 / 3 / 5; margin-right: 10px;}
+@media screen and (max-width:350px) {
+    .container-centrale{
+        font-size: 7px;
+    }
+    .container-infos-centrale{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:920px){
+    .container-infos-centrale article{
+        font-size: 30px;
+    }
+}
 @media screen and (min-width:650px) {
     .exemple-experiences{
         flex-direction: row;
@@ -95,6 +170,14 @@
         height: 30vw;
         width: 25vw;
     }
+    .container-centrale ul{
+        font-size: 20px;
+    }
+    .container-centrale{
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    
     .card-stage:hover>.volet{
         top:-30vw;
         transition-duration: 500ms;
