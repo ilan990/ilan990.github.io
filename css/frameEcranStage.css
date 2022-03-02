@@ -9,7 +9,6 @@
     background-color: blue;
 }
 
-
 .card-stage{
     position: relative;
     display: flex;
@@ -27,16 +26,13 @@
 }
 .card-stage p{
     margin: auto 10px;
-    text-align: center;
-    
-   
+    text-align: center;   
 }
-
 
 .exemple-experiences{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(145, 145, 145);
+    background-color: #979696;
     flex-direction: column;
 }
 .volet{
@@ -49,6 +45,7 @@
     justify-content: center;
     align-items: center;
     color: aliceblue;
+    transition: top 500ms;
 }
 .volet h1{
     font-size: 2em;
@@ -85,7 +82,7 @@
 .Centrale-Optique,.Lilmod-Et-Lelamed{
     flex-direction: column!important;
 }
-.frameStage div:nth-child(6){
+.frameStage div:nth-child(6),.frameStage div:nth-child(5){
     background-color: rgb(238, 238, 238);
 }
 .Centrale-Optique h1{
@@ -95,7 +92,7 @@
     height: 40vh;
     object-fit: cover;
     width: 100vw;
-    margin-top: calc(50px + 5vh);
+    margin-top: calc(50px + 40vh);
 }
 .banner-centrale{
     position: relative;
@@ -119,6 +116,7 @@
 .container-centrale ul{
     list-style: none;
     padding: 0;
+    font-size: 15px;
     
 }
 .container-infos-centrale{
@@ -137,14 +135,59 @@
 .parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 0.5fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     }
     
-    .div1 { grid-area: 1 / 1 / 2 / 3; margin-left: 10px; }
+    .div1 { grid-area: 1 / 1 / 2 / 3; margin-left: 10px;}
     .div2 { grid-area: 2 / 1 / 3 / 3; margin-left: 10px;}
     .div3 { grid-area: 1 / 3 / 3 / 5; margin-right: 10px;}
+    .div4 { 
+        grid-area: 3 / 1 / 4 / 5; 
+        margin: 0 10px;
+        border: 2px solid black;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .div4 span{
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    .centraleimg{
+        margin-left: 10px;
+        width: 80vw;
+    }
+    .lilmodimg{
+        margin-left: 10px;
+        width:80vw;
+    }
+    .imgvpl,.imglilmod{
+        flex-direction: column;
+        display: flex;
+        margin: 10px auto;
+    }
+    .imgvpl img:nth-child(1){
+        margin-bottom: 10px;
+    }
+    .imglilmod img:nth-child(1){
+        margin-bottom: 30px;
+    }
+    /* .banner-lilmod img{
+        height: 40vh;
+        object-fit: cover;
+        width: 100vw;
+        margin-top: calc(50px + 20vh);
+    } */
+    
+    .banner-lilmod img {
+    height: 40vh;
+    object-fit: cover;
+    width: 100vw;
+    margin-top: calc(50px + 87vh);
+    }
 @media screen and (max-width:350px) {
     .container-centrale{
         font-size: 7px;
@@ -152,7 +195,14 @@
     .container-infos-centrale{
         font-size: 12px;
     }
+    .parent {
+        grid-template-rows: repeat(3, 0.4fr);
+    }
+    .container-centrale ul{
+        font-size: 10px;
+    }
 }
+
 @media screen and (min-width:920px){
     .container-infos-centrale article{
         font-size: 30px;
@@ -162,6 +212,10 @@
     .exemple-experiences{
         flex-direction: row;
     } 
+    .centraleimg{
+        margin-left: 10px;
+        width: 40vw;
+    }
     .card-stage{
         width: 25vw;
         height: 30vw;   
@@ -171,7 +225,7 @@
         width: 25vw;
     }
     .container-centrale ul{
-        font-size: 20px;
+        font-size: 25px;
     }
     .container-centrale{
         font-size: 15px;
@@ -185,5 +239,17 @@
     }
     .volet h1{
         font-size: 4em;
+    }
+    .imgvpl,.imglilmod{
+        flex-direction: row;
+    }
+    .lilmodimg{
+        width:40vw;
+    }
+    .banner-lilmod img{
+        height: 40vh;
+        object-fit: cover;
+        width: 100vw;
+        margin-top: calc(50px + 65vh);
     }
 }
