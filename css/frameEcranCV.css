@@ -25,6 +25,7 @@
 .PartieBottomCV{
     overflow-y: scroll;
     --webkit--overflow-y:scroll;
+    scrollbar-width: none;
 }
 .timeline {
   width: 80%;

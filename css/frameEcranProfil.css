@@ -62,6 +62,8 @@
     overflow-y: scroll;
     --webkit--overflow-y:scroll;
     color: black;
+    scrollbar-width: none;
+    width: 100vw;
     
 }
 

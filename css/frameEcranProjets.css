@@ -96,6 +96,7 @@
     overflow-y: scroll;
     color: black;
     background-color: white;
+    scrollbar-width: none;
 }
 .partieBottomNavigationInternet h1{
     text-align: center;
@@ -109,6 +110,7 @@
     justify-content: center;
     overflow-y: scroll;
     --webkit--overflow-y:scroll;
+    scrollbar-width: none;
 }
 
 .card{
