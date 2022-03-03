@@ -202,6 +202,9 @@
     --webkit--overflow-y:scroll;
     
 }
+.laFleur{
+    justify-content: center;
+}
 .gsbSymfony,.gsbJava{
     position: relative;
     background-color: #005377;
@@ -348,13 +351,29 @@
     background-color: #005377;
     border: none;
     cursor: pointer;
+    color: #011b27;
 }
 .buttons-interface-symfony button:hover, .buttons-interface-java button:hover{
     background-color: #0378aa;
     color: white; 
 }
 
-
+.lafleurimg{
+    width: 90vw;
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+    background-color: #005377;
+    margin:10px auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+.lafleurimg img{
+    width: 30vw;
+    margin: 10px;
+    height: auto;
+}
 @media screen and (min-width:866px) {
     .url{
         width:83vw;

@@ -6,9 +6,10 @@
     overflow: hidden;
     --webkit--overflow:hidden;
     margin: 0;
-    background-color: #111;
+    background-color: #171C32;
     color: black;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 
 .container {
@@ -17,7 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #111;
+    background-color: #171C32;
     overflow-y: scroll;
     --webkit--overflow-y:scroll;
     margin: 87px 0;
@@ -33,15 +34,15 @@
   max-width: 800px;
   margin: 0 auto;
   position: relative;
- 
 }
 
 .timeline ul {
   list-style: none;
+  padding: 0;
 }
 .timeline ul li {
   padding: 20px;
-  background-color: #1e1f22;
+  background-color: #252C48;
   color: white;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -72,7 +73,7 @@
   justify-content: space-around;
   margin: 30px auto;
   width: 90vw;
-  background-color: #27282b;
+  background-color: #252C48;
   border-radius: 15px;
 }
 .logiciel,.web{
