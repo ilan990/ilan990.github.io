@@ -5,6 +5,8 @@
     flex-direction: column;
     overflow-y: scroll;
     overflow-x: hidden;
+    --webkit--overflow-y:scroll;
+    --webkit--overflow-x:hidden;
     margin: 0;
     background-color: blue;
 }
@@ -16,6 +18,7 @@
     height: 40vh;
     margin:auto;
     overflow: hidden;
+    --webkit--overflow:hidden;
     flex-direction: column;
     background-color: white;
     align-items: center;
@@ -29,12 +32,7 @@
     text-align: center;   
 }
 
-.exemple-experiences{
-    display: flex;
-    justify-content: space-around;
-    background-color: #979696;
-    flex-direction: column;
-}
+
 .volet{
     position: absolute;
     display: flex;
@@ -77,7 +75,19 @@
     flex-direction: column;
     height: 100%;
     overflow-y: scroll;
+    --webkit--overflow-y:scroll;
     
+}
+.main{
+    height: calc(95vh - 42px);
+    overflow-y: scroll;
+    --webkit--overflow-y:scroll;
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    background-color: #979696;
+    flex-direction: column;
 }
 .Centrale-Optique,.Lilmod-Et-Lelamed{
     flex-direction: column!important;
@@ -92,7 +102,7 @@
     height: 40vh;
     object-fit: cover;
     width: 100vw;
-    margin-top: calc(50px + 40vh);
+    
 }
 .banner-centrale{
     position: relative;
@@ -100,8 +110,7 @@
     flex-direction: column;
    
 }
-.container-centrale{
-    height: 200px;
+.container-centrale,.maquette-centrale{
     border: 2px solid black;
     padding-right: 10px;
     padding-left: 10px;
@@ -111,6 +120,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.maquette-centrale{
+    margin: auto;
+    width: 95vw;
+}
+.container-centrale{
+    height: 200px;
 }
 
 .container-centrale ul{
@@ -175,18 +191,43 @@
     .imglilmod img:nth-child(1){
         margin-bottom: 30px;
     }
-    /* .banner-lilmod img{
-        height: 40vh;
-        object-fit: cover;
-        width: 100vw;
-        margin-top: calc(50px + 20vh);
-    } */
+   
     
     .banner-lilmod img {
     height: 40vh;
     object-fit: cover;
     width: 100vw;
-    margin-top: calc(50px + 87vh);
+    }
+    .imglilmod h4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin:10px auto;
+    }
+    .ordi{
+        width: 500px;
+        height: 300px;
+        overflow: scroll;
+        --webkit--overflow:scroll;
+        object-fit: cover;
+        border: 5px solid black;
+        margin: 5px;
+        background: black!important;
+        
+    }
+    .img-maquettes{
+        display: flex;
+        flex-flow: wrap;
+        margin: auto;
+        width: 95vw;
+        justify-content: center;
+    }y
+    .maquette-centrale p{
+        font-size: large;
+    }
+    .ordi img{
+        width: 100%;
     }
 @media screen and (max-width:350px) {
     .container-centrale{
@@ -209,6 +250,9 @@
     }
 }
 @media screen and (min-width:650px) {
+    .imglilmod h4{
+        margin: auto 10px;
+    }
     .exemple-experiences{
         flex-direction: row;
     } 
@@ -250,6 +294,7 @@
         height: 40vh;
         object-fit: cover;
         width: 100vw;
-        margin-top: calc(50px + 65vh);
+        
     }
+
 }

@@ -4,6 +4,7 @@
     height:100vh;
     flex-direction: column;
     overflow: hidden;
+    --webkit--overflow:hidden;
     margin: 0
 }
 .partieTopNavigationInternet{
@@ -83,6 +84,7 @@
     width: 60vw;
     margin-right: 5px;
     overflow-x: overlay;
+    --webkit--overflow-x:overlay;
     height: 17px;
     font-size: 14px;
 }
@@ -106,6 +108,7 @@
     flex-flow: wrap;
     justify-content: center;
     overflow-y: scroll;
+    --webkit--overflow-y:scroll;
 }
 
 .card{
@@ -118,6 +121,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    --webkit--overflow:hidden;
     background-color:rgba(128, 128, 128, 0.637);
     box-shadow: 10px 5px 5px black;
     border-radius: 5px;
@@ -193,6 +197,7 @@
     flex-direction: column;
     height: 100%;
     overflow-y: scroll;
+    --webkit--overflow-y:scroll;
     
 }
 .gsbSymfony,.gsbJava{

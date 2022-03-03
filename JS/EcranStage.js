@@ -17,10 +17,10 @@ $(function(){
       }
 
     $(".retourenArriere").click(function(){frameStagevisible(0)})
-    $(".card-stage:nth-child(1) button").click(function(){
+    $(".card-stage:nth-child(1)").click(function(){
         frameStagevisible(1)
     })
-    $(".card-stage:nth-child(2) button").click(function(){
+    $(".card-stage:nth-child(2)").click(function(){
       frameStagevisible(2)
   })
 })

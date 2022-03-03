@@ -6,6 +6,7 @@ body{
   font-family: Helvetica, sans-serif;
   overflow-x:hidden;
   overflow-y:hidden;
+  --webkit--overflow:hidden;
   user-select: none;
   
 }
@@ -21,6 +22,7 @@ h5{
 html {
     overflow-x: none;
     overflow-y:none;
+    --webkit--overflow:none;
 }
 ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */

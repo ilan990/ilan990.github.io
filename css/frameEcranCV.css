@@ -4,6 +4,7 @@
     height:100vh;
     flex-direction: column;
     overflow: hidden;
+    --webkit--overflow:hidden;
     margin: 0;
     background-color: #111;
     color: black;
@@ -18,10 +19,12 @@
     justify-content: center;
     background-color: #111;
     overflow-y: scroll;
+    --webkit--overflow-y:scroll;
     margin: 87px 0;
 }
 .PartieBottomCV{
     overflow-y: scroll;
+    --webkit--overflow-y:scroll;
 }
 .timeline {
   width: 80%;

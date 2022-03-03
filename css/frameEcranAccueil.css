@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: space-around;
     overflow: hidden;
+    --webkit--overflow:hidden;
 }
 .backgroundAccueil {
     display:flex;
