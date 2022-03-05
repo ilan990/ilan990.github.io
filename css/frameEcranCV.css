@@ -42,7 +42,7 @@
 }
 .timeline ul li {
   padding: 20px;
-  background-color: #252C48;
+  background-color: #465284;
   color: white;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -73,7 +73,7 @@
   justify-content: space-around;
   margin: 30px auto;
   width: 90vw;
-  background-color: #252C48;
+  background-color: #465284;
   border-radius: 15px;
 }
 .logiciel,.web{

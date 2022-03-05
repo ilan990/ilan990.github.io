@@ -8,10 +8,12 @@
     --webkit--overflow-y:scroll;
     --webkit--overflow-x:hidden;
     margin: 0;
-    background-color: blue;
     scrollbar-width: none;
 }
-
+.div1,.div2,.div3,.div4,.maquette-centrale{
+    background-color: aliceblue!important;
+    box-shadow: 0.3em 0.3em 0.4em #cacaca;
+}
 .card-stage{
     position: relative;
     display: flex;
@@ -182,6 +184,7 @@
     .lilmodimg{
         margin-left: 10px;
         width:80vw;
+        object-fit: contain;
     }
     .imgvpl,.imglilmod{
         flex-direction: column;
@@ -296,7 +299,7 @@
     
     }
     .volet h1{
-        font-size: 4em;
+        font-size: 2em;
     }
     .imgvpl,.imglilmod{
         flex-direction: row;

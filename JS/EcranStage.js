@@ -6,9 +6,13 @@ $(function(){
         
         for(let i=0;i<frameExperiences.length;i++){
           if (i ==nbr){  
-            console.log("ok")
             $("."+frameExperiences[i]).css("display","flex");
             $("#urlChangeExp").val("https://www.Experiences-Ilan-Assouline.fr/"+frameExperiences[i])
+            if(i==0){
+              $('.retourenArriere').attr('src','img/Projets/fleches-gauche-gris.png');
+            }else{
+              $('.retourenArriere').attr('src','img/Projets/fleches-gauche.png');
+            }
           }else{
             $("."+frameExperiences[i]).css("display","none");
             

@@ -3,6 +3,7 @@ let frames=["frameMain","frameAccueil","frameEcranApplication","frameApplication
 let titleApplicationTop=[["Projets","CV","Experiences"],["Profil"]]
 let imgApplication=[["https://img.icons8.com/color/48/000000/ms-edge-new.png","img/Applications/CV.png","img/Applications/safari.png"],["img/Applications/profil.png"]]
 let frameAppBottom=["frameProfil"];
+
 function framevisible(nbr){
   for(let i=0;i<frames.length;i++){
     if (i!=nbr){
@@ -24,6 +25,7 @@ function framevisible(nbr){
     }
   }
 }
+
 function framevisibleBottom(nbr){
   for(let i=0;i<frameAppBottom.length;i++){
 
