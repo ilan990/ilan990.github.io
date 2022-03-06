@@ -37,7 +37,6 @@
   .play{cursor:pointer}
  .backgroundScroll {
     position: relative;
-    background-color: rgb(218, 56, 56);
     width:100vh;
     opacity:0; 
     bottom:50vh;

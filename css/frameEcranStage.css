@@ -32,7 +32,8 @@
 }
 .card-stage p{
     margin: auto 10px;
-    text-align: center;   
+    text-align: center; 
+    font-size: x-large;  
 }
 
 
@@ -123,7 +124,7 @@
     font-weight: bold;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .maquette-centrale{

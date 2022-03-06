@@ -12,7 +12,6 @@
 .backgroundApplication {
     display:flex;
     position: absolute;
-    background-color: rgb(218, 56, 56);
     top:0;
     opacity:0; 
     width:100vw;
