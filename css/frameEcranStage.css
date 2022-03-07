@@ -98,9 +98,6 @@
 .Centrale-Optique,.Lilmod-Et-Lelamed{
     flex-direction: column!important;
 }
-.frameStage div:nth-child(6),.frameStage div:nth-child(5){
-    background-color: rgb(238, 238, 238);
-}
 .Centrale-Optique h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -120,8 +117,6 @@
     border: 2px solid black;
     padding-right: 10px;
     padding-left: 10px;
-    font-size: 10px;
-    font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -130,6 +125,9 @@
 .maquette-centrale{
     margin: auto;
     width: 90vw;
+}
+.container-centrale,.container-infos-centrale article{
+    font-size: 11px;
 }
 .container-centrale{
     height: 200px;
@@ -244,12 +242,12 @@
     .banner-centrale h1,.banner-lilmod h1{
         font-size: 5.5vh;
     }
-@media screen and (max-width:350px) {
-    .container-centrale{
-        font-size: 7px;
+    .container-centrale ul {
+        font-weight: bold;
     }
-    .container-infos-centrale{
-        font-size: 12px;
+@media screen and (max-width:350px) {
+    .container-centrale,.container-infos-centrale article{
+        font-size: 10px;
     }
     .parent {
         grid-template-rows: repeat(3, 0.4fr);
@@ -259,11 +257,6 @@
     }
 }
 
-@media screen and (min-width:920px){
-    .container-infos-centrale article{
-        font-size: 30px;
-    }
-}
 @media screen and (min-width:650px) {
     .maquette-centrale p{
         font-size: 50px;
@@ -289,11 +282,12 @@
     .container-centrale ul{
         font-size: 25px;
     }
-    .container-centrale{
+    .container-centrale,.container-infos-centrale article{
         font-size: 15px;
-        font-weight: bolder;
     }
-    
+    .container-infos-centrale article{
+        margin: auto 20px;
+    }
     .card-stage:hover>.volet{
         top:-30vw;
         transition-duration: 500ms;

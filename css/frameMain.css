@@ -6,15 +6,6 @@
     background-size: cover;
     position: relative;
 }
-.frameMain p{
-    position: absolute;
-    top:10px;
-    color:orangered; 
-    left: 2vw;
-    text-align:center; 
-    font-weight: 900;
-    font-size: 25px;
-}
 
 .tablette{
       display: flex;

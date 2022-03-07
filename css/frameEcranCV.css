@@ -99,9 +99,13 @@
   padding-right: 8px;
 }
 .img-logo{
-  text-align: initial;
+  text-align: right;
 }
+
 @media only screen and (min-width: 768px) {
+  .img-logo{
+    text-align: initial;
+  }
   .timeline:before {
     content: "";
     position: absolute;
