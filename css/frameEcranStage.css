@@ -48,6 +48,7 @@
     align-items: center;
     color: aliceblue;
     transition: top 500ms;
+    flex-direction: column;
 }
 .volet h1{
     font-size: 2em;
@@ -68,6 +69,7 @@
     height: 4vh;
     align-items: center;
     border-radius: 1px;
+    cursor: pointer;
   
 }
 .card-stage button:hover{
@@ -101,18 +103,8 @@
 .Centrale-Optique h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.banner-centrale img{
-    height: 40vh;
-    object-fit: cover;
-    width: 100vw;
-    
-}
-.banner-centrale{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-   
-}
+
+
 .container-centrale,.maquette-centrale{
     border: 2px solid black;
     padding-right: 10px;
@@ -127,23 +119,34 @@
     width: 90vw;
 }
 .container-centrale,.container-infos-centrale article{
-    font-size: 11px;
+    font-size: 16px;
+    margin-bottom: 3px;
+
+}
+.volet img{
+    height: 30px;
+    position: absolute;
+    bottom:0;
 }
 .container-centrale{
-    height: 200px;
+    height: 100%;
 }
 
 .container-centrale ul{
     list-style: none;
     padding: 0;
-    font-size: 15px;
+    font-size: large;
     
+}
+.partieBottomNavigationInternet h1,.partieBottomNavigationInternet h1{
+    font-size: 18px;
+   
 }
 .container-infos-centrale{
     border: 2px solid black;
     padding-right: 10px;
     padding-left: 10px;
-    height: 415px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -152,26 +155,27 @@
 .row:nth-child(2){
     float: right;
 }
-.parent {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 0.5fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    }
-    
-    .div1 { grid-area: 1 / 1 / 2 / 3; margin-left: 10px;}
-    .div2 { grid-area: 2 / 1 / 3 / 3; margin-left: 10px;}
-    .div3 { grid-area: 1 / 3 / 3 / 5; margin-right: 10px;}
-    .div4 { 
-        grid-area: 3 / 1 / 4 / 5; 
-        margin: 0 10px;
-        border: 2px solid black;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        width: 98vw;
+        }
+        
+        .div1 { grid-area: 1 / 1 / 2 / 2;margin-left: 10px; }
+        .div2 { grid-area: 2 / 1 / 3 / 2;margin-left: 10px; }
+        .div3 { grid-area: 1 / 2 / 2 / 3;margin-left: 10px; }
+        .div4 { grid-area: 3 / 1 / 4 / 3; 
+            margin: 0 10px;
+            border: 2px solid black;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 0;}
     .div4 span{
         font-weight: bolder;
         font-size: 20px;
@@ -189,6 +193,7 @@
         flex-direction: column;
         display: flex;
         margin: 10px auto;
+       
     }
     .imgvpl img:nth-child(1){
         margin-bottom: 10px;
@@ -196,13 +201,7 @@
     .imglilmod img:nth-child(1){
         margin-bottom: 30px;
     }
-   
-    
-    .banner-lilmod img {
-    height: 40vh;
-    object-fit: cover;
-    width: 100vw;
-    }
+ 
     .imglilmod h4{
         display: flex;
         justify-content: center;
@@ -233,18 +232,16 @@
         text-align: center;
     }
     .imgvpl img:nth-child(1),.imgvpl img:nth-child(2){
-        margin: 50px 10px;
+        margin: 30px 10px;
     }
     
     .ordi img{
         width: 100%;
     }
-    .banner-centrale h1,.banner-lilmod h1{
-        font-size: 5.5vh;
-    }
-    .container-centrale ul {
+       .container-centrale ul {
         font-weight: bold;
     }
+    
 @media screen and (max-width:350px) {
     .container-centrale,.container-infos-centrale article{
         font-size: 10px;
@@ -258,11 +255,31 @@
 }
 
 @media screen and (min-width:650px) {
+    .partieBottomNavigationInternet h1,.partieBottomNavigationInternet h1{
+        font-size: 35px;
+
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        }
+        
+        .div1 { grid-area: 1 / 2 / 2 / 4;margin-left: 10px; }
+        .div2 { grid-area: 2 / 2 / 3 / 4;margin-left: 10px; }
+        .div3 { grid-area: 1 / 4 / 3 / 6;margin-left: 10px; }
+        .div4 { grid-area: 3 / 2 / 4 / 6; 
+            margin: 0 10px;
+            border: 2px solid black;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 0;}
     .maquette-centrale p{
         font-size: 50px;
-    }
-    .imglilmod h4{
-        margin: auto 10px;
     }
     .exemple-experiences{
         flex-direction: row;
@@ -280,7 +297,7 @@
         width: 25vw;
     }
     .container-centrale ul{
-        font-size: 25px;
+        font-size: 16px;
     }
     .container-centrale,.container-infos-centrale article{
         font-size: 15px;
@@ -300,13 +317,15 @@
         flex-direction: row;
     }
     .lilmodimg{
-        width:40vw;
+        width:30vw;
     }
-    .banner-lilmod img{
-        height: 40vh;
-        object-fit: cover;
+    .avant h4,.apres h4{
+        margin-bottom: 10px;
+    }
+    .imglilmod{
+        justify-content: space-around;
         width: 100vw;
-        
     }
+    
 
 }
