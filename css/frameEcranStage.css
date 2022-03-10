@@ -115,7 +115,7 @@
     flex-direction: column;
 }
 .contexte-centrale h1{
-    margin: 125px auto -1vh 8vw;
+    margin: 125px auto -1vh auto;
     font-weight: normal;
     color: rgba(0, 0, 0, 0.842);
 }
@@ -128,9 +128,11 @@
 .contextes{
     display: flex;
     flex-flow: wrap;
+    flex-direction: column;
     width: 90vw;
     margin: auto;
     justify-content: center;
+    align-items: center;
   
 }
 .contextes article{
@@ -150,7 +152,7 @@
 }
 .contexte1,.contexte2,.contexte3,.contexte4{
     display: flex;
-    width: 400px;
+    width: 40vw;
     height: 200px;
     margin: 2vw;
     border-bottom: 2px solid grey ;
@@ -299,7 +301,13 @@
         border-top: 2px solid grey;
         margin-top: 2vw;
     }
-  }
+    .contextes{
+        flex-direction: row;
+    }
+    .contexte-centrale h1{
+        margin: 125px auto -1vh 8vw;
+    }
+}
   @media screen and (min-width:650px){
     .imgvpl,.imglilmod{
         flex-direction: row;
