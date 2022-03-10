@@ -263,7 +263,6 @@
     }
     
    .maquette-centrale{
-        border: 2px solid black;
         padding-right: 10px;
         padding-left: 10px;
         display: flex;
@@ -272,8 +271,6 @@
         align-items: center;
         margin: auto;
         width: 90vw;
-        background-color: aliceblue!important;
-        box-shadow: 0.3em 0.3em 0.4em #cacaca;
     }
     .img-maquettes{
         display: flex;
