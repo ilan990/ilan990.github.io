@@ -152,7 +152,7 @@
 }
 .contexte1,.contexte2,.contexte3,.contexte4{
     display: flex;
-    width: 40vw;
+    width: 90vw;
     height: 200px;
     margin: 2vw;
     border-bottom: 2px solid grey ;
@@ -306,6 +306,9 @@
     }
     .contexte-centrale h1{
         margin: 125px auto -1vh 8vw;
+    }
+    .contexte1,.contexte2,.contexte3,.contexte4{
+        width: 40vw;
     }
 }
   @media screen and (min-width:650px){
