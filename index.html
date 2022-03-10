@@ -471,115 +471,85 @@
 
         </div>
 
-        <div class="partieBottomNavigationInternet exemple-experiences Lilmod-Et-Lelamed reload">
+        <div class="partieBottomNavigationInternet exemple-experiences Lilmod-Et-Lelamed ">
                 <h1>Lilmod et Lelamed</h1>
 
-            <div class="parent">
-                <div class="div1">
-                    <div class="container-centrale">
-                        <ul>
-                            <li>Directeur : Laurent Hadjaj</li>
-                            <li>Date de création : 2015</li>
-                            <li>Plus de 1000 connexions par jour</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="div2">
-                    <div class="container-centrale">
-                        <h1>CONTEXTE</h1>
-                        <article> Le président de l’association m’a chargé
-                            d’optimiser le site internet afin de le rendre plus rapide et plus interactif ainsi que la
-                            création
-                            d’un jeu web pour permettre aux visiteurs d’apprendre l’anglais et l’hébreu de manière
-                            ludique.
-                        </article>
-                    </div>
-                </div>
-                <div class="div3">
-                    <div class="container-infos-centrale">
-                        <h1>INFOS</h1>
-                        <article>Lilmod et Lelamed est une association non lucrative qui a pour but de
-                            promouvoir et faciliter l’apprentissage de l’anglais et l’hébreu (lecture, grammaire, etc…) de manière ludique et dynamique.
-                        </article>
-
-                    </div>
-                </div>
-                <div class="div4">
-                    <p><span>Ressources :</span> Utilisation d'un serveur NGINX sur Debian.</p><br>
-                    <p><span>Technique :</span> L’application devra être développé en HTML5(Twig) / CSS3 avec le
-                        Framework Zurb Foundation, Javascript ES6 avec la bibliothèque JQUERY et JSON, en PHP
-                        avec le Framework Symfony.</p><br>
-                    <p><span>Ergonomique :</span> Le code devra être le plus clair et le plus concis possible afin
-                        d’éviter
-                        toute perte de temps et toute lenteur. </p>
-                </div>
-            </div>
-            <br>
-            <div class="imglilmod">
-                <div class="avant">
-                    <h4>AVANT</h4>
-                    <img class="lilmodimg" src="./img/Experiences/avant-lilmod.PNG" alt="">
-                </div>
-                <div class="apres">
-                    <h4>APRES</h4>
-                    <img class="lilmodimg" src="./img/Experiences/apres-lilmod.PNG" alt="">
-                </div>
-                
-            </div>
-
+            
 
         </div>
-        <div class="partieBottomNavigationInternet exemple-experiences Centrale-Optique reload">
-            <h1>Centrale Optique</h1>
-            <div class="parent">
-                <div class="div1">
-                    <div class="container-centrale">
-                        <ul>
-                            <li>Directeur : Gabriel Halioua</li>
-                            <li>création : 1999</li>
-                            <li>salariés : 3</li>
-                            <li>C.A : 600 000 €/an</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="div2">
-                    <div class="container-centrale">
-                        <h1>CONTEXTE</h1>
-                        <article>Mr Halioua souhaité que je règle les problèmes sur le site internet
-                            qui permet aux opticiens externe de se connecter pour visualiser differentes
-                            teintes de verres.<br>
-                            Il m'a aussi demandé de lui creer un site web où il pourrait montrer ses produits.
-                        </article>
-                    </div>
-                </div>
-                <div class="div3">
-                    <div class="container-infos-centrale">
-                        <h1>INFOS</h1>
-                        <article>La société Centrale Optique à été créé par Mr Halioua en 1999.
-                            Elle compte aujourd'hui 3 employés. Elle part d'une idée revolutionnaire,
-                            reunir le fournisseur et le vendeur. Cette idée mise en place en seulement
-                            une année a permis à cette entreprise d'avoir une solide clientèle dès les débuts.</article>
-                        
 
+        <div class="partieBottomNavigationInternet exemple-experiences Centrale-Optique ">
+            <header class="header-centrale">
+                <div class="inner-width">
+                  <a href="#" class="logo"><img src="img/Experiences/CentraleOptique.png" alt=""></a>
+                  <i class="menu-toggle-btn fas fa-bars"></i>
+                  <nav class="navigation-menu">
+                    <a href="#contexte-centrale"><i class="fas fa-home home"></i> Contexte</a>
+                    <a href="#premierwebsite-centrale"><i class="fas fa-align-left about"></i> Premier Website</a>
+                    <a href="#maquette-centrale"><i class="fab fa-buffer works"></i> Maquettes</a>
+                  </nav>
+                </div>
+              </header>
+          
+          
+              <script type="text/javascript">
+                $(".menu-toggle-btn").click(function(){
+                  $(this).toggleClass("fa-times");
+                  $(".navigation-menu").toggleClass("active");
+                });
+              </script>
+                <div class="contexte-centrale" id="contexte-centrale">
+                    <h1>Contexte</h1>
+                    <div class="contextes">
+                        <div class="contexte1">
+                            <ul class="tableau-contexte">
+                                <li><h3>Directeur : Gabriel Halioua</h3></li>
+                                <li><h3>Création : 1999</h3></li>
+                                <li><h3>Salariés : 3</h3></li>
+                                <li><h3>C.A : 600 000 €/an</h3></li>
+                            </ul>
+                        </div>
+                        <div class="contexte2">
+                            <h3>Problèmes</h3>
+                            <article>Mr Halioua souhaité que je règle les problèmes sur le site internet
+                                qui permet aux opticiens externe de se connecter pour visualiser differentes
+                                teintes de verres.<br>
+                                Il m'a aussi demandé de lui creer un site web où il pourrait montrer ses produits.
+                            </article>
+                        </div>
+                        <div class="contexte3">
+                            <h3>Informations</h3>
+                            <article>La société Centrale Optique à été créé par Mr Halioua en 1999.
+                                Elle compte aujourd'hui 3 employés. Elle part d'une idée revolutionnaire,
+                                reunir le fournisseur et le vendeur. Cette idée mise en place en seulement
+                                une année a permis à cette entreprise d'avoir une solide clientèle dès les débuts.
+                            </article>
+                        </div>
+                        <div class="contexte4">
+                            <h3>Développement</h3>
+                            <article>
+                            <span>Technique :</span> L’application devra être développé en HTML5 / CSS3, Javascript ES6
+                                avec la bibliothèque JQuery.<br>
+                            <span>Ergonomique :</span> Le code devra être le plus clair et le plus concis possible afin
+                                d’éviter
+                                toute perte de temps et toute lenteur. 
+                            </article>
+                        </div>
                     </div>
+                    
                 </div>
-                <div class="div4">
-                    <p><span>Technique :</span> L’application devra être développé en HTML5 / CSS3, Javascript ES6
-                        avec la bibliothèque JQuery.</p><br>
-                    <p><span>Ergonomique :</span> Le code devra être le plus clair et le plus concis possible afin
-                        d’éviter
-                        toute perte de temps et toute lenteur. </p>
-                </div>
-            </div>
-            <br>
-            <h1>Demonstration du site pour les opticiens</h1>
-            <div class="imgvpl">
-                <img class="centraleimg" src="./img/Experiences/video-presentation-vpl.gif" alt="">
-                <img class="centraleimg" src="./img/Experiences/vplfrance.PNG" alt="">
-            </div>
+              <hr>
 
-            <div class="maquette-centrale">
-                <p>Maquette du nouveau site:</p>
+              <div id="premierwebsite-centrale">
+                  <h1>Site internet pour les opticiens</h1>
+                  <div class="imgvpl">
+                    <img class="centraleimg" src="./img/Experiences/video-presentation-vpl.gif" alt="">
+                    <img class="centraleimg" src="./img/Experiences/vplfrance.PNG" alt="">
+                </div>
+              </div>
+              <hr>
+              <div class="maquette-centrale" id="maquette-centrale">
+                <h1>Maquette du nouveau site:</h1>
                 <div class="img-maquettes">
                     <div class="ordi">
                         <img src="img/Experiences/maquette-centrale.png" alt="">
@@ -598,6 +568,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
     </div>

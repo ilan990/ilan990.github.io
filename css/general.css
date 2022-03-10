@@ -29,3 +29,17 @@ html {
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
+a{
+  list-style: none;
+  text-decoration: none;  
+}
+ul{
+  list-style: none;
+}
+hr{
+  height: 10px;
+  background-color: rgba(128, 128, 128, 0.26);
+  width: 100vw;
+  box-shadow: none;
+  margin: 50px auto;
+}
