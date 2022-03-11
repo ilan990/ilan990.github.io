@@ -27,4 +27,9 @@ $(function(){
     $(".card-stage:nth-child(2)").click(function(){
       frameStagevisible(2)
   })
+
+  $(".menu-toggle-btn").click(function(){
+    $(this).toggleClass("fa-times");
+    $(".navigation-menu").toggleClass("active");
+  });
 })

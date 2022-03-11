@@ -10,6 +10,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/frameMain.css" />
     <link rel="stylesheet" href="css/frameEcranAccueil.css" />
@@ -472,9 +474,66 @@
         </div>
 
         <div class="partieBottomNavigationInternet exemple-experiences Lilmod-Et-Lelamed ">
-                <h1>Lilmod et Lelamed</h1>
+            <header class="header-lilmod">
+                <div class="inner-width">
+                  <a href="#" class="logo"><img src="img/Experiences/lilmod-logo.png" alt=""></a>
+                  <nav class="navigation-menu-lilmod">
+                    <a href="#contexte-lilmod"><i class="fas fa-home home"></i> Contexte</a>
+                    <a href="#premierwebsite-lilmod"><i class="fas fa-align-left about"></i> Avant/Après</a>
+                  </nav>
+                </div>
+              </header>
+          
+                <div class="contexte-centrale" id="contexte-lilmod">
+                    <h1>Contexte</h1>
+                    <div class="contextes">
+                        <div class="contexte1">
+                            <ul class="tableau-contexte">
+                                <li><h3>Directeur : Laurent Hadjaj</h3></li>
+                                <li><h3>Date de création : 2015</h3></li>
+                                <li><h3>Plus de 1000 connexions par jour</h3></li>
+                                <li><h3>C.A : Non communiqué</h3></li>
+                            </ul>
+                        </div>
+                        <div class="contexte2">
+                            <h3>Situation</h3>
+                            <article>
+                                Le président de l’association m’a chargé
+                                d’optimiser le site internet afin de le rendre plus rapide et plus interactif ainsi que la
+                                création
+                                d’un jeu web pour permettre aux visiteurs d’apprendre l’anglais et l’hébreu de manière
+                                ludique.
+                            </article>
+                        </div>
+                        <div class="contexte3">
+                            <h3>Informations</h3>
+                            <article>Lilmod et Lelamed est une association à but non lucratif qui a pour but de
+                                promouvoir et faciliter l’apprentissage de l’anglais et l’hébreu (lecture, grammaire, etc…)
+                                
+                            </article>
+                        </div>
+                        <div class="contexte4">
+                            <h3>Développement</h3>
+                            <article>
+                                <span>Ressources :</span> Serveur NGINX sur Debian.<br>
+                                <span>Technique :</span> HTML5(Twig) / CSS3 (Zurb Foundation), JS (JQUERY/JSON), PHP (Symfony).<br>
+                            </article>
+                        </div>
+                    </div>
+                    
+                </div>
+              <hr>
 
-            
+              <div id="premierwebsite-lilmod">
+                  <h1>AVANT/APRÈS</h1>
+                  <div class="imglilmod">
+                    <h4>AVANT</h4>
+                    <img class="lilmodimg" src="./img/Experiences/avant-lilmod.PNG" alt="">
+                    <h4>APRÈS</h4>
+                    <img class="lilmodimg" src="./img/Experiences/apres-lilmod.PNG" alt="">
+                </div>
+              </div>
+              <hr>            
 
         </div>
 
@@ -482,7 +541,6 @@
             <header class="header-centrale">
                 <div class="inner-width">
                   <a href="#" class="logo"><img src="img/Experiences/CentraleOptique.png" alt=""></a>
-                  <i class="menu-toggle-btn fas fa-bars"></i>
                   <nav class="navigation-menu">
                     <a href="#contexte-centrale"><i class="fas fa-home home"></i> Contexte</a>
                     <a href="#premierwebsite-centrale"><i class="fas fa-align-left about"></i> Premier Website</a>
@@ -491,13 +549,6 @@
                 </div>
               </header>
           
-          
-              <script type="text/javascript">
-                $(".menu-toggle-btn").click(function(){
-                  $(this).toggleClass("fa-times");
-                  $(".navigation-menu").toggleClass("active");
-                });
-              </script>
                 <div class="contexte-centrale" id="contexte-centrale">
                     <h1>Contexte</h1>
                     <div class="contextes">
@@ -510,7 +561,7 @@
                             </ul>
                         </div>
                         <div class="contexte2">
-                            <h3>Problèmes</h3>
+                            <h3>Situation</h3>
                             <article>Mr Halioua souhaité que je règle les problèmes sur le site internet
                                 qui permet aux opticiens externe de se connecter pour visualiser differentes
                                 teintes de verres.<br>

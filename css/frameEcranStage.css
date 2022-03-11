@@ -149,6 +149,7 @@
 }
 .contextes h3{
     color: #569cff;
+    margin-top: 0;
 }
 .contexte1,.contexte2,.contexte3,.contexte4{
     display: flex;
@@ -180,7 +181,12 @@
     width: 100vw;
     position: fixed;
   }
-  
+  .header-lilmod{
+      background: #efefef;
+      height: 90px;
+      width: 100vw;
+      position: fixed;
+  }
   .inner-width{
     max-width: 1000px;
     padding: 0 10px;
@@ -196,12 +202,13 @@
     height: 50px;
   }
   
-  .navigation-menu{
+  .navigation-menu,.navigation-menu-lilmod{
     float: right;
     display: flex;
     align-items: center;
     min-height: 90px;
   }
+ 
   
   .navigation-menu a{
     margin-left: 10px;
@@ -212,17 +219,33 @@
     border-radius: 4px;
     transition: .3s linear;
   }
+  .navigation-menu-lilmod a{
+    margin-left: 10px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    transition: .3s linear;
+  }
   
+  .navigation-menu-lilmod a:hover{
+      background:#fff;
+      color: #00445b;
+      transform: scale(1.1);
+  }
+
   .navigation-menu a:hover{
     background: #fff;
     color: #2f3640;
     transform: scale(1.1);
   }
   
-  .navigation-menu i{
+  .navigation-menu i,.navigation-menu-lilmod i{
     margin-right: 8px;
     font-size: 16px;
   }
+  
   
  
   
@@ -244,6 +267,11 @@
       margin: 50px auto;
       width: 100vw;
   }
+  .lilmodimg{
+    margin-left: 10px;
+    width:80vw;
+    object-fit: contain;
+}
   .imgvpl,.imglilmod{
     flex-direction: column;
     display: flex;
@@ -263,7 +291,13 @@
         margin-left: 10px;
         width: 80vw;
     }
-    
+    .imglilmod h4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin:10px auto;
+    }
    .maquette-centrale{
         padding-right: 10px;
         padding-left: 10px;
@@ -295,6 +329,7 @@
     .ordi img{
         width: 100%;
     }
+   
 
   @media screen and (min-width:975px){
     .contexte2{
@@ -319,6 +354,12 @@
         margin-left: 10px;
         width: 40vw;
     }
+    .imglilmod h4{
+        margin: auto 10px;
+    }
+    .lilmodimg{
+        width:40vw;
+    }
   }
   @media screen and (max-width:700px) {
     .menu-toggle-btn{
@@ -337,7 +378,7 @@
       box-sizing: border-box;
     }
   
-    .navigation-menu::before{
+    .navigation-menu::before,.navigation-menu-lilmod::before{
       content: "";
       border-left: 10px solid transparent;
       border-right: 10px solid transparent;
@@ -347,12 +388,12 @@
       right: 10px;
     }
   
-    .navigation-menu a{
+    .navigation-menu a,.navigation-menu-lilmod a{
       display: block;
       margin: 10px 0;
     }
   
-    .navigation-menu.active{
+    .navigation-menu.active .navigation-menu-lilmod.active{
       display: block;
     }
     .inner-width{
@@ -361,7 +402,20 @@
     }
 
   }
-  
+@media screen and (max-width:900px){
+    .navigation-menu-lilmod{
+        position: fixed;
+      width: 100%;
+      max-width: 400px;
+      background: #172b4d;
+      top: 90px;
+      right: 0;
+      display: none;
+      padding: 20px 40px;
+      box-sizing: border-box;
+    }
+    
+}
 @media screen and (min-width:650px) {
     
     .exemple-experiences{
