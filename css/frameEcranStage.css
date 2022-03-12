@@ -276,13 +276,21 @@
     flex-direction: column;
     display: flex;
     margin: 10px auto;
+    justify-content: center;
+    align-items: center;
    
+    }
+    .premierwebsite-lilmod h4{
+        margin-bottom: 40px;
     }
     .imgvpl img:nth-child(1){
         margin-bottom: 10px;
     }
     .imglilmod img:nth-child(1){
         margin-bottom: 30px;
+    }
+    .imglilmod img{
+        margin-top: 10px;
     }
     .imgvpl img:nth-child(1),.imgvpl img:nth-child(2){
         margin: 20px auto;
@@ -329,7 +337,25 @@
     .ordi img{
         width: 100%;
     }
-   
+   .mvc{
+       width: 100vw;
+       height: auto;
+       margin: auto;
+       background-color: #00445b;
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+       margin: 30px auto;
+   }
+   .mvc img{
+       height: 50vh;
+       width: auto;
+       margin: 20px 40px;
+   }
+   .mvctxt{
+       font-size: 2em;
+       color: white;
+   }
 
   @media screen and (min-width:975px){
     .contexte2{
@@ -366,7 +392,7 @@
       display: block !important;
     }
   
-    .navigation-menu{
+    .navigation-menu,.navigation-menu-lilmod{
       position: fixed;
       width: 100%;
       max-width: 400px;
@@ -402,20 +428,7 @@
     }
 
   }
-@media screen and (max-width:900px){
-    .navigation-menu-lilmod{
-        position: fixed;
-      width: 100%;
-      max-width: 400px;
-      background: #172b4d;
-      top: 90px;
-      right: 0;
-      display: none;
-      padding: 20px 40px;
-      box-sizing: border-box;
-    }
-    
-}
+
 @media screen and (min-width:650px) {
     
     .exemple-experiences{

@@ -37,9 +37,11 @@ ul{
   list-style: none;
 }
 hr{
-  height: 10px;
+
   background-color: rgba(128, 128, 128, 0.26);
-  width: 100vw;
+  width: 99.9vw;
   box-shadow: none;
+  padding: 0;
   margin: 50px auto;
+
 }

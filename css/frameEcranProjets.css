@@ -215,6 +215,10 @@
 }
 .laFleur{
     justify-content: center;
+    background-color: #023d24;
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
 }
 .gsbSymfony,.gsbJava{
     position: relative;
@@ -298,6 +302,7 @@
     text-align: center;
     color: #005377;
 }
+
 .listedecontraintes{
     display: flex;
     justify-content: space-evenly;
@@ -334,7 +339,15 @@
     width: 70vw;
     background-color: #005377;
     margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    color: white;
    
+}
+.applicationLafleur img{
+    width: 50vw;
+    height: auto;
+    margin: 20px auto;
 }
 
 .interfacegsbsymfony img{
@@ -369,22 +382,6 @@
     color: white; 
 }
 
-.lafleurimg{
-    width: 90vw;
-    height: auto;
-    display: flex;
-    flex-flow: wrap;
-    background-color: #005377;
-    margin:10px auto;
-    justify-content: center;
-    align-items: center;
-    
-}
-.lafleurimg img{
-    width: 30vw;
-    margin: 10px;
-    height: auto;
-}
 @media screen and (min-width:866px) {
     .url{
         width:83vw;
