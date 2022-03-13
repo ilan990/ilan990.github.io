@@ -2,7 +2,7 @@ $(function(){
 
     let frames=["frameMain","frameAccueil","frameEcranApplication","frameApplicationProjets"];
     let titleDisquette=["GSB SYMFONY","GSB JAVA","LA FLEUR","ETAM"];
-    let explicationDisquette=["Création d'un CRUD permettant de gerer les visiteurs au sein d'une region en symfony","Laboratoire pharmaceutique ayant besoin d'un logiciel pour organiser leurs données ","Création d'une boutique en ligne pour un fleuriste","Test d'intégration pour l'entreprise"];
+    let explicationDisquette=["Création d'un CRUD permettant de gerer les visiteurs au sein d'une région en symfony","Laboratoire pharmaceutique ayant besoin d'un logiciel pour organiser ses données ","Création d'une boutique en ligne pour un fleuriste","Test d'intégration pour l'entreprise"];
     let frameProjets=["gsbSymfony","gsbJava","laFleur","projetsMain","etam"];
     function framevisible(nbr){
       for(let i=0;i<frames.length;i++){

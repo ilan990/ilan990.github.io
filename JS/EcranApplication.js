@@ -1,6 +1,6 @@
 $(function(){
 let frames=["frameMain","frameAccueil","frameEcranApplication","frameApplicationProjets","frameApplicationCV",'frameStage'];
-let titleApplicationTop=[["Projets","CV","Experiences"],["Profil"]]
+let titleApplicationTop=[["Projets","CV","Expériences"],["Profil"]]
 let imgApplication=[["https://img.icons8.com/color/48/000000/ms-edge-new.png","img/Applications/CV.png","img/Applications/safari.png"],["img/Applications/profil.png"]]
 let frameAppBottom=["frameProfil"];
 
