@@ -30,7 +30,6 @@ function framevisibleBottom(nbr){
   for(let i=0;i<frameAppBottom.length;i++){
 
     if (frameAppBottom[i]!=nbr){
-      console.log('non')
       $("."+frameAppBottom[i]).css("display","none");
       
 

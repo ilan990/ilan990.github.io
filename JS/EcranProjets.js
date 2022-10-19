@@ -17,6 +17,7 @@ $(function(){
     function frameProjetvisible(nbr){
       
       for(let i=0;i<frameProjets.length;i++){
+   
         if (frameProjets[i]!=nbr){  
           $("."+frameProjets[i]).css("display","none");
         }else{
