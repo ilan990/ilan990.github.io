@@ -15,7 +15,7 @@
     position: relative;
     display: flex;
     width: 75vw;
-    height: 40vh;
+    height: 30vh;
     margin:auto;
     overflow: hidden;
     --webkit--overflow:hidden;
@@ -37,7 +37,7 @@
 .volet{
     position: absolute;
     display: flex;
-    height: 40vh;
+    height: 30vh;
     width: 75vw;
     top:0;
     background-color: rgb(43, 41, 41);
@@ -275,7 +275,7 @@
   .imgvpl,.imglilmod{
     flex-direction: column;
     display: flex;
-    margin: 10px auto;
+    margin: 50px auto;
     justify-content: center;
     align-items: center;
    

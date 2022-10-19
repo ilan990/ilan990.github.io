@@ -10,6 +10,9 @@
     margin: 0;
     background-color: rgb(65, 62, 62);
 }
+.informationsIdentite{
+    margin-bottom: 50px;
+}
 .photo-identite{
     width: 100vw;
     display: flex;
