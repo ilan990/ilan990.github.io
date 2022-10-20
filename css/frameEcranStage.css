@@ -275,7 +275,7 @@
   .imgvpl,.imglilmod{
     flex-direction: column;
     display: flex;
-    margin: 50px auto;
+    margin: 70px auto;
     justify-content: center;
     align-items: center;
    
@@ -426,6 +426,7 @@
         display: flex;
         justify-content: center;
     }
+    
 
   }
 

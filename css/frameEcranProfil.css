@@ -11,14 +11,13 @@
     background-color: rgb(65, 62, 62);
 }
 .informationsIdentite{
-    margin-bottom: 50px;
+    margin-bottom: 65px;
 }
 .photo-identite{
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0 0 0;
     flex-direction: column;
 }
 
@@ -100,6 +99,7 @@
     }
     .photo-identite{
        flex-direction: row;
+       margin: 50px 0 0 0;
     }
     .tableauInformation tr{
         display: inherit;
