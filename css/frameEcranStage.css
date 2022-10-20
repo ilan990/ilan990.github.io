@@ -353,7 +353,7 @@
        margin: 20px 40px;
    }
    .mvctxt{
-       font-size: 2em;
+       font-size: 1em;
        color: white;
    }
 
@@ -442,6 +442,9 @@
     .volet{
         height: 30vw;
         width: 25vw;
+    }
+    .mvctxt{
+        font-size: 2em;
     }
     .card-stage:hover>.volet{
         top:-30vw;
