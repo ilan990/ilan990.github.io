@@ -431,8 +431,28 @@
                     
                     <tr>
                         <td>AGE :</td>
-                        <td>22 ans</td>
-                    </tr>
+                        <td id="age">Calcul en cours...</td>
+                      </tr>
+                      
+                      <script>
+                        function calculateAge(birthYear, birthMonth, birthDay) {
+                          const currentDate = new Date();
+                          const currentYear = currentDate.getFullYear();
+                          const currentMonth = currentDate.getMonth();
+                          const currentDay = currentDate.getDate();
+                      
+                          let age = currentYear - birthYear;
+                          if (currentMonth < birthMonth || (currentMonth == birthMonth && currentDay < birthDay)) {
+                            age--;
+                          }
+                      
+                          return age;
+                        }
+                      
+                        const age = calculateAge(1999, 6, 15); // Notez que les mois en JavaScript sont numérotés de 0 à 11
+                        document.getElementById("age").innerHTML = `${age} ans`;
+                      </script>
+                      
                     <tr>
                         <td>PROFESSION :</td>
                         <td>Apprenti développeur</td>
